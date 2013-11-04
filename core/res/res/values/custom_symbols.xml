@@ -16,7 +16,6 @@
 */
 -->
 <resources>
-
   <!-- Vendor mismatched fingerprint warning -->
   <java-symbol type="integer" name="config_flashlightProximityTimeout" />
 
@@ -33,4 +32,9 @@
   <java-symbol type="array" name="config_customPermissionsList" />
 
   <java-symbol type="bool" name="config_has_Soli" />
+
+  <!-- ADB notification -->
+  <java-symbol type="string" name="adb_net_active_notification_title" />
+  <java-symbol type="string" name="adb_both_active_notification_title" />
+  <java-symbol type="string" name="adb_active_generic_notification_message" />
 </resources>
