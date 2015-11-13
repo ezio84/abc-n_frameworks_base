@@ -37,4 +37,6 @@
   <!-- High Brightness Mode -->
   <java-symbol type="bool" name="config_supportHighBrightness" />
 
+  <!-- Vendor mismatched fingerprint warning -->
+  <java-symbol type="string" name="system_error_vendorprint" />
 </resources>
