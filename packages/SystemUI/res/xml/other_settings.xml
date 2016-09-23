@@ -57,7 +57,10 @@
             android:title="@string/volume_dnd_silent"
             sysui:defValue="true"
             sysui:metricsAction="315" />
-
     </PreferenceScreen>
 
+    <Preference
+            android:key="demo_mode"
+            android:title="@string/demo_mode"
+            android:fragment="com.android.systemui.tuner.DemoModeFragment" />
 </PreferenceScreen>
