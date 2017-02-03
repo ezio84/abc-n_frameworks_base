@@ -74,6 +74,7 @@ public class QSFooter extends FrameLayout implements
     private NextAlarmController mNextAlarmController;
     private UserInfoController mUserInfoController;
     private View mSettingsButton;
+    private View mRunningServicesButton;
 
     private TextView mAlarmStatus;
     private View mAlarmStatusCollapsed;
@@ -135,6 +136,9 @@ public class QSFooter extends FrameLayout implements
         mSettingsButton = findViewById(R.id.settings_button);
         mSettingsButton.setOnClickListener(this);
 
+        mRunningServicesButton = findViewById(R.id.running_services_button);
+        mRunningServicesButton.setOnClickListener(this);
+
         mAlarmStatusCollapsed = findViewById(R.id.alarm_status_collapsed);
         mAlarmStatus = findViewById(R.id.alarm_status);
         mDateTimeGroup.setOnClickListener(this);
@@ -146,6 +150,7 @@ public class QSFooter extends FrameLayout implements
         // RenderThread is doing more harm than good when touching the header (to expand quick
         // settings), so disable it for this view
         ((RippleDrawable) mSettingsButton.getBackground()).setForceSoftware(true);
+        ((RippleDrawable) mRunningServicesButton.getBackground()).setForceSoftware(true);
         ((RippleDrawable) mExpandIndicator.getBackground()).setForceSoftware(true);
 
         updateResources();
@@ -247,6 +252,8 @@ public class QSFooter extends FrameLayout implements
             animatorBuilder.addFloat(mMultiUserSwitch, "alpha", 0, 1);
         }
 
+        animatorBuilder.addFloat(mRunningServicesButton, "alpha", 0, 1);
+
         return animatorBuilder.build();
     }
 
@@ -327,6 +334,7 @@ public class QSFooter extends FrameLayout implements
     private void updateVisibilities() {
         updateAlarmVisibilities();
         mSettingsButton.setVisibility(View.VISIBLE);
+        mRunningServicesButton.setVisibility(mExpanded ? View.VISIBLE : View.INVISIBLE);
         final boolean isDemo = UserManager.isDeviceInDemoMode(mContext);
 
         mMultiUserSwitch.setVisibility((mExpanded || mAlwaysShowMultiUserSwitch)
@@ -383,7 +391,19 @@ public class QSFooter extends FrameLayout implements
                 mActivityStarter.postStartActivityDismissingKeyguard(new Intent(
                         AlarmClock.ACTION_SHOW_ALARMS), 0);
             }
+        } else if (v == mRunningServicesButton) {
+            MetricsLogger.action(mContext,
+                    mExpanded ? MetricsProto.MetricsEvent.ACTION_QS_EXPANDED_SETTINGS_LAUNCH
+                            : MetricsProto.MetricsEvent.ACTION_QS_COLLAPSED_SETTINGS_LAUNCH);
+            startRunningServicesActivity();
         }
+    }
+
+    private void startRunningServicesActivity() {
+        Intent intent = new Intent();
+        intent.setClassName("com.android.settings",
+                "com.android.settings.Settings$DevRunningServicesActivity");
+        mActivityStarter.startActivity(intent, true /* dismissShade */);
     }
 
     private void startSettingsActivity() {
