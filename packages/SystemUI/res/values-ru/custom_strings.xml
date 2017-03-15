@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2016 The Pure Nexus Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- statusbar items tuner -->
+    <string name="statusbar_icons_blacklist">Иконки строки состояния</string>
+    <!-- notification controls -->
+    <string name="tuner_notification_control">Расширенное управление уведомлениями</string>
+
+    <!-- QS tiles layout customization -->
+    <string name="qs_menu_item_columns">Столбцы в портрет.</string>
+    <string name="qs_menu_item_columns_landscape">Столбцы в альбом.</string>
+    <string name="qs_menu_item_rows">Строки в портрет.</string>
+    <string name="qs_menu_item_rows_landscape">Строки в альбом.</string>
+    <string name="qs_menu_item_one">1</string>
+    <string name="qs_menu_item_two">2</string>
+    <string name="qs_menu_item_three">3</string>
+    <string name="qs_menu_item_four">4</string>
+    <string name="qs_menu_item_five">5</string>
+    <string name="qs_menu_item_six">6</string>
+    <string name="qs_menu_item_seven">7</string>
+    <string name="qs_menu_item_eight">8</string>
+    <string name="qs_menu_item_nine">9</string>
+    <string name="qs_menu_item_reset">Сброс</string>
+    <string name="qs_menu_item_titles">Скрыть подписи</string>
+
+    <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин выключен</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин включен</string>
+
+    <!-- Screenshot QS tile -->
+    <string name="quick_settings_screenshot_label">Снимок экрана</string>
+    <string name="quick_settings_region_screenshot_label">Снимок области</string>
+
+    <!-- High Brightness Mode Tile -->
+    <string name="quick_settings_high_brightness">Высокая яркость</string>
+
+    <!-- Reboot/Recovery QS Tile -->
+    <string name="quick_settings_reboot_label">Перезагрузить</string>
+    <string name="quick_settings_reboot_recovery_label">Рекавери</string>
+
+     <!-- Sound QS Tile -->
+     <string name="quick_settings_sound_label">Звук</string>
+     <string name="quick_settings_sound_ring">Все звуки</string>
+     <string name="quick_settings_sound_vibrate">Вибрировать</string>
+     <string name="quick_settings_sound_dnd">Не беспокоить</string>
+
+     <!-- Volume QS Tile -->
+     <string name="accessibility_quick_settings_volume_panel">Панель громкости</string>
+     <string name="quick_settings_volume_panel_label">Панель громкости</string>
+
+    <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">Отладка по сети</string>
+    <string name="quick_settings_network_adb_enabled_label">Включена</string>
+
+    <!-- Android Auto 2.0x QS tile -->
+    <string name="quick_settings_androidauto_label">Android Auto</string>
+
+    <string name="screenshot_abort_title">Снимок экрана не снят.</string>
+    <string name="screenshot_abort_text">Операция отменена.</string>
+
+    <!-- Path data for portrait battery -->
+    <string name="battery_portrait_path_full" translatable="false">M 5 2 H 19 V 21 H 5 V 2 Z</string>
+    <string name="battery_portrait_path_empty" translatable="false">M 5 21 H 19 V 21 H 5 V 21 Z</string>
+    <string name="battery_portrait_clip_path" translatable="false">M6,21V4h3V2h6v2h3v17H6z</string>
+
+    <!-- Path data for landscape battery -->
+    <string name="battery_landscape_path_full" translatable="false">M 1 4 H 25 V 20 H 1 V 4 Z</string>
+    <string name="battery_landscape_path_empty" translatable="false">M 1 4 H 1 V 20 H 1 V 4 Z</string>
+    <string name="battery_landscape_clip_path" translatable="false">M25,16h-2v4H1V4h22v4h2V16z</string>
+
+    <!-- Path data for circle battery -->
+    <string name="battery_circle_path" translatable="false">M 12 3.5 C 16.6944203736 3.5 20.5 7.30557962644 20.5 12 C 20.5 16.6944203736 16.6944203736 20.5 12 20.5 C 7.30557962644 20.5 3.5 16.6944203736 3.5 12 C 3.5 7.30557962644 7.30557962644 3.5 12 3.5 Z</string>
+
+    <!-- Path data for big circle battery -->
+    <string name="battery_bigcircle_path" translatable="false">M 12,0.9999999 C 18.075132,0.9999999 23,5.9248678 23,12 23,18.075132 18.075132,23 12,23 5.9248675,23 0.99999975,18.075132 0.99999975,12 0.99999975,5.9248678 5.9248675,0.9999999 12,0.9999999 Z</string>
+
+    <!-- Navigation bar Tile -->
+    <string name="quick_settings_navigation_bar">Панель навигации</string>
+    <string name="quick_settings_smartbar">SmartBar</string>
+    <string name="quick_settings_fling">Fling</string>
+
+    <!-- Ambient display and lift gesture Tile -->
+    <string name="quick_settings_doze_notifications_label">Уведомления Doze</string>
+
+    <!-- Advance location quick setting tile -->
+    <string name="accessibility_quick_settings_location_battery_saving">Определение местоположения: по координатам сети.</string>
+    <string name="accessibility_quick_settings_location_gps_only">>Определение местоположения: по спутникам GPS.</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">Определение местоположения: по всем источникам.</string>
+    <string name="accessibility_quick_settings_location_changed_battery_saving">Местоположение теперь будет определяться по координатам сети.</string>
+    <string name="accessibility_quick_settings_location_changed_gps_only">Местоположение теперь будет определяться по спутникам GPS.</string>
+    <string name="accessibility_quick_settings_location_changed_high_accuracy">Местоположение теперь будет определяться по всем источникам.</string>
+    <string name="quick_settings_locatioдn_detail_title">Определение местоположения</string>
+    <string name="quick_settings_location_battery_saving_label">По координатам сети</string>
+    <string name="quick_settings_location_gps_only_label">По спутникам GPS</string>
+    <string name="quick_settings_location_high_accuracy_label">По всем источникам</string>
+    <string name="quick_settings_location_off_custom_label">Местоположение</string>
+
+    <!-- vpn icon switch -->
+    <string name="status_bar_vpn">VPN</string>
+    <!-- data saver icon switch -->
+    <string name="status_bar_datasaver">Экономия трафика</string>
+
+    <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Открыть список работающих приложений.</string>
+
+    <!-- Sim recents -->
+    <string name="recents_multiwin_warning">Многооконный режим уже активен.\nПросто выберите приложение и нажмите на него.</string>
+    <string name="recents_multiwin_nolastapp">Вы очистили недавние приложения, пожалуйста, выберите приложение на рабочем столе или меню.</string>
+    <string name="recents_killapp_warning">Пожалуйста, удерживайте, чтобы закрыть приложение</string>
+</resources>
