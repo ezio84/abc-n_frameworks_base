@@ -705,4 +705,10 @@ public class NavigationBarFragment extends Fragment implements Callbacks {
         fragmentHost.addTagListener(TAG, listener);
         return navigationBarView;
     }
+
+    public void setDoubleTapToSleep() {
+        if (mNavigationBarView != null) {
+            mNavigationBarView.setDoubleTapToSleep();
+        }
+    }
 }
