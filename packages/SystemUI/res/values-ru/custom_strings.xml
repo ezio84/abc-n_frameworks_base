@@ -17,17 +17,26 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="global_action_restart_advanced">Расшир. перезагрузка</string>
-    <string name="global_action_restart_recovery">В режим восстановления</string>
-    <string name="global_action_restart_bootloader">В загрузчик</string>
+    <string name="global_action_restart_recovery">Режим восстановления</string>
+    <string name="global_action_restart_bootloader">Загрузчик</string>
+    <string name="global_action_restart_ui">Интерфейс</string>
 
+    <!-- High Brightness Mode Tile -->
+    <string name="quick_settings_high_brightness">Высокая яркость</string>
     <string name="screenshot_abort_title">Снимок экрана не сделан</string>
     <string name="screenshot_abort_text">Операция отменена</string>
 
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_running_services">Открыть список работающих приложений.</string>
 
+    <string name="alert_on_charged_level">Вы можете отключить телефон от питания ( ">"<xliff:g id="percentage">%s</xliff:g> )</string>
+    <string name="battery_level_good_title">Оптимальный уровень заряда</string>
+    <string name="notification_channel_charge_alert">Оптимальный уровень зарядки батареи</string>
     <!-- SysUI Tuner -->
     <string name="statusbar_icons_blacklist">Значки в строке состояния</string>
+    <string name="navbar_tuner_activity">Кнопки панели навигации</string>
+    <string name="lockscreen_tuner_activity">Ярлыки экрана блокировки</string>
+    <string name="powernotif_tuner_activity">Расширенное управление уведомлениями</string>
 
     <string name="lockscreen_default">По умолчанию</string>
     <string name="lockscreen_hidden">Нет</string>
@@ -37,10 +46,19 @@
 
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин выкл.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин вкл.</string>
 
     <!-- Screenshot QS tile -->
     <string name="quick_settings_screenshot_label">Снимок экрана</string>
     <string name="quick_settings_region_screenshot_label">Снимок области</string>
+    <!-- Ambient display and lift gesture Tile -->
+    <string name="quick_settings_doze_notifications_label">Ambient Display</string>
+
+    <!-- Advance location quick setting tile -->
+    <string name="accessibility_quick_settings_location_battery_saving">Определение местоположения: по координатам сети.</string>
+    <string name="accessibility_quick_settings_location_gps_only">>Определение местоположения: по спутникам GPS.</string>
+    <string name="accessibility_quick_settings_location_high_accuracy">Определение местоположения: по всем источникам..</string>
 
     <!-- PiP Tile -->
     <string name="quick_settings_pip_label">PiP</string>
