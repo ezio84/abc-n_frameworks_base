@@ -19,9 +19,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="global_action_restart_advanced">Avanzado</string>
-    <string name="global_action_restart_recovery">Recuperación</string>
-    <string name="global_action_restart_bootloader">Bootloader</string>
-    <string name="global_action_restart_ui">SystemUI</string>
+    <string name="global_action_restart_recovery">Modo Recuperación</string>
+    <string name="global_action_restart_bootloader">Gestor de Arranque</string>
+    <string name="global_action_restart_ui">Sistema gráfico</string>
 
     <!-- High Brightness Mode Tile -->
     <string name="quick_settings_high_brightness">Brillo máximo</string>
