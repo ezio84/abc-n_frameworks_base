@@ -35,7 +35,6 @@
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">Touch to disable debugging.</string>
 
-    <string name="app_blacklist">Blacklist app</string>
 
     <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_toggleNavigationEditor">control navigation editor</string>
@@ -45,4 +44,5 @@
     <string name="custom_clock_styles" translatable="false">
         digital,digital_bold,sammy,sammy_bold,analog
     </string>
+
 </resources>

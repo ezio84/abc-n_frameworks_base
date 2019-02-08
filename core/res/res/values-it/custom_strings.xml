@@ -28,6 +28,4 @@
     <string name="adb_net_active_notification_title">ADB su rete attivo</string>
     <string name="adb_both_active_notification_title">ADB su USB e rete attivo</string>
     <string name="adb_active_generic_notification_message">Tocca per disattivare debugging</string>
-
-    <string name="app_blacklist">Aggiungi alla blacklist</string>
 </resources>
