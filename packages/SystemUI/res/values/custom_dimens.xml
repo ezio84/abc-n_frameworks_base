@@ -26,4 +26,7 @@
 
     <!-- Padding after battery level text in status bar, QS, and Keyguard -->
     <dimen name="battery_level_padding_end">2dp</dimen>
+
+    <!-- Width of the battery icon in the status bar when set to circle style. -->
+    <dimen name="status_bar_battery_icon_circle_width">13.5dp</dimen>
 </resources>
