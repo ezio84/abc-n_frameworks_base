@@ -76,6 +76,7 @@ public class NotificationInterruptionStateProvider {
     private boolean mDisableNotificationAlerts;
 
     private boolean mLessBoringHeadsUp;
+    private boolean mPartialScreenshot;
 
     @Inject
     public NotificationInterruptionStateProvider(Context context, NotificationFilter filter,
@@ -244,7 +245,7 @@ public class NotificationInterruptionStateProvider {
             return false;
         }
 
-        if (entry.shouldSuppressPeek() || shouldSkipHeadsUp(sbn)) {
+        if (entry.shouldSuppressPeek() || shouldSkipHeadsUp(sbn) || mPartialScreenshot) {
             if (DEBUG_HEADS_UP) {
                 Log.d(TAG, "No heads up: suppressed by DND: " + sbn.getKey());
             }
@@ -359,6 +360,10 @@ public class NotificationInterruptionStateProvider {
 
     public void setUseLessBoringHeadsUp(boolean lessBoring) {
         mLessBoringHeadsUp = lessBoring;
+    }
+
+    public void setPartialScreenshot(boolean active) {
+        mPartialScreenshot = active;
     }
 
     public boolean shouldSkipHeadsUp(StatusBarNotification sbn) {
