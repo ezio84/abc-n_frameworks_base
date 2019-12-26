@@ -1030,7 +1030,7 @@ public final class PowerManagerService extends SystemService
                 Settings.Global.THEATER_MODE_ON, 0) == 1;
         mAlwaysOnEnabled = mAmbientDisplayConfiguration.alwaysOnEnabled(UserHandle.USER_CURRENT);
         mDozeOnChargeEnabled = Settings.Secure.getIntForUser(resolver,
-                Settings.Secure.OMNI_DOZE_ON_CHARGE, 0, UserHandle.USER_CURRENT) != 0;
+                Settings.Secure.OMNI_DOZE_ON_CHARGE, 1, UserHandle.USER_CURRENT) != 0;
         Settings.Secure.putIntForUser(mContext.getContentResolver(),
                 Settings.Secure.OMNI_DOZE_ON_CHARGE_NOW, mDozeOnChargeEnabled && mIsPowered ? 1 : 0,
                 UserHandle.USER_CURRENT);

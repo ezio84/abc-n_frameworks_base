@@ -234,7 +234,7 @@ public class AmbientDisplayConfiguration {
 
     /** {@hide} */
     public boolean alwaysOnChargingEnabled(int user) {
-        final boolean dozeOnChargeEnabled = boolSetting(Settings.Secure.OMNI_DOZE_ON_CHARGE, user, 0);
+        final boolean dozeOnChargeEnabled = boolSetting(Settings.Secure.OMNI_DOZE_ON_CHARGE, user, 1);
         if (dozeOnChargeEnabled) {
             final boolean dozeOnChargeEnabledNow = boolSetting(Settings.Secure.OMNI_DOZE_ON_CHARGE_NOW, user, 0);
             return dozeOnChargeEnabledNow && alwaysOnAvailable() && !accessibilityInversionEnabled(user);
