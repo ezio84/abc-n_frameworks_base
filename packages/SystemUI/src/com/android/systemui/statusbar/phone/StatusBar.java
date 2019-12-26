@@ -1861,10 +1861,7 @@ public class StatusBar extends SystemUI implements DemoMode,
 
     private void setEdgeGestureDeadZone() {
         if (getNavigationBarView() != null) {
-            int mode = Settings.System.getIntForUser(mContext.getContentResolver(),
-                Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, 0,
-                UserHandle.USER_CURRENT);
-            getNavigationBarView().setEdgeGestureDeadZone(mode);
+            getNavigationBarView().setEdgeGestureDeadZone();
         }
     }
 

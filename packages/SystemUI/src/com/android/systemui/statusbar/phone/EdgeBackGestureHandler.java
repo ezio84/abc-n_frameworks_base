@@ -132,8 +132,8 @@ public class EdgeBackGestureHandler implements DisplayListener {
 
     // The edge width where touch down is allowed
     private int mEdgeWidth;
-    // The edge height where touch down is allowed
-    private int mEdgeYDeadzone = 0;
+    // Displaysize divider to check the edge height where touch down is allowed
+    private int mYDeadzoneDivider = 0;
     // The slop to distinguish between horizontal and vertical motion
     private final float mTouchSlop;
     // Duration after which we consider the event as longpress.
@@ -192,10 +192,7 @@ public class EdgeBackGestureHandler implements DisplayListener {
         mFingerOffset = res.getDimensionPixelSize(R.dimen.navigation_edge_finger_offset);
         updateCurrentUserResources(res);
         
-        int deadZoneMode = Settings.System.getIntForUser(mContext.getContentResolver(),
-            Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, 0,
-            UserHandle.USER_CURRENT);
-        setEdgeGestureDeadZone(deadZoneMode);
+        setEdgeGestureDeadZone();
         
     }
 
@@ -330,22 +327,8 @@ public class EdgeBackGestureHandler implements DisplayListener {
             return false;
         }
 
-        if (mEdgeYDeadzone != 0) {
-            int divider;
-            switch (mEdgeYDeadzone) {
-                default: // mode set to 1
-                    divider = 4;
-                    break;
-                case 2: // mode set to 2
-                    divider = 3;
-                    break;
-                case 3: // mode set to 3
-                    divider = 2;
-                    break;
-            }
-            if (y < (mDisplaySize.y / divider)) {
-                return false;
-            }
+        if (mYDeadzoneDivider != 0 && y < (mDisplaySize.y / mYDeadzoneDivider)) {
+            return false;
         }
 
         if (x > mEdgeWidth + mLeftInset && x < (mDisplaySize.x - mEdgeWidth - mRightInset)) {
@@ -379,8 +362,24 @@ public class EdgeBackGestureHandler implements DisplayListener {
         mPartialScreenshotActive = active;
     }
 
-    public void setEdgeGestureDeadZone(int mode) {
-        mEdgeYDeadzone = mode;
+    public void setEdgeGestureDeadZone() {
+        int mode = Settings.System.getIntForUser(mContext.getContentResolver(),
+            Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, 0,
+            UserHandle.USER_CURRENT);
+        switch (mode) {
+            default:
+                mYDeadzoneDivider = 0; // mode set to 0, back gesture working on the whole edge
+                break;
+            case 1: // mode set to 1
+                mYDeadzoneDivider = 4;
+                break;
+            case 2: // mode set to 2
+                mYDeadzoneDivider = 3;
+                break;
+            case 3: // mode set to 3, back gesture working only in the half bottom edge
+                mYDeadzoneDivider = 2;
+                break;
+        }
     }
 
     private void onMotionEvent(MotionEvent ev) {

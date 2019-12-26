@@ -762,8 +762,8 @@ public class NavigationBarView extends FrameLayout implements
         mEdgeBackGestureHandler.setPartialScreenshot(active);
     }
 
-    public void setEdgeGestureDeadZone(int mode) {
-        mEdgeBackGestureHandler.setEdgeGestureDeadZone(mode);
+    public void setEdgeGestureDeadZone() {
+        mEdgeBackGestureHandler.setEdgeGestureDeadZone();
     }
 
     /**
