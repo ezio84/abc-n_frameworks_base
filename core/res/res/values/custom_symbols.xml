@@ -31,4 +31,6 @@
   <java-symbol type="bool" name="config_ledCanPulse" />
 
   <java-symbol type="array" name="config_customPermissionsList" />
+
+  <java-symbol type="bool" name="config_has_Soli" />
 </resources>

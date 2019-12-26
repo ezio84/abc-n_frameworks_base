@@ -30,4 +30,6 @@
         <item>com.google.android.apps.wellbeing</item>
         <item>com.android.wallpaper.livepicker</item>
     </string-array>
+
+    <bool name="config_has_Soli">false</bool>
 </resources>
