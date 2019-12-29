@@ -69,21 +69,15 @@ public class AdbOverNetworkTile extends QSTileImpl<BooleanState> {
     protected void handleClick() {
         if (mKeyguard.isSecure() && mKeyguard.isShowing()) {
             mActivityStarter.postQSRunnableDismissingKeyguard(() -> {
-                Settings.Secure.putIntForUser(mContext.getContentResolver(),
-                        Settings.Secure.ADB_PORT, getState().value ? -1 : 5555,
-                        UserHandle.USER_CURRENT);
+                setAdbNetwork(getState().value);
             });
             return;
         }
-        Settings.Secure.putIntForUser(mContext.getContentResolver(),
-                Settings.Secure.ADB_PORT, getState().value ? -1 : 5555,
-                UserHandle.USER_CURRENT);
+        setAdbNetwork(getState().value);
     }
 
     @Override
     public Intent getLongClickIntent() {
-        /*return new Intent().setComponent(new ComponentName(
-            "com.android.settings", "com.android.settings.Settings$DevelopmentSettingsActivity"));*/
         return null;
     }
 
@@ -149,6 +143,12 @@ public class AdbOverNetworkTile extends QSTileImpl<BooleanState> {
     private boolean isAdbNetworkEnabled() {
         return Settings.Secure.getInt(mContext.getContentResolver(),
                 Settings.Secure.ADB_PORT, 0) > 0;
+    }
+
+    private void setAdbNetwork(boolean enabledTile) {
+        Settings.Secure.putIntForUser(mContext.getContentResolver(),
+                Settings.Secure.ADB_PORT, enabledTile ? -1 : 5555,
+                UserHandle.USER_CURRENT);
     }
 
     private ContentObserver mObserver = new ContentObserver(mHandler) {
