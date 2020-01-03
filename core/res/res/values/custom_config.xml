@@ -15,10 +15,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Time to give to the proximity sensor before toggling the flashlight with the Power button.
-    Set to -1 to disable the proximity sensor check at all-->
-    <integer name="config_flashlightProximityTimeout">300</integer>
-
      <!-- Does the battery LED support multiple colors?
          Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
