@@ -244,6 +244,7 @@ public class AmbientDisplayConfiguration {
         return false;
     }
 
+    /** {@hide} */
     public boolean deviceHasSoli() {
         return mDeviceHasSoli;
     }
