@@ -28,15 +28,6 @@ LOCAL_REQUIRED_MODULES := \
 	DisplayCutoutEmulationDoubleOverlay \
 	DisplayCutoutEmulationTallOverlay \
 	FontNotoSerifSourceOverlay \
-	IconPackCircularAndroidOverlay \
-	IconPackCircularSettingsOverlay \
-	IconPackCircularSystemUIOverlay \
-	IconPackFilledAndroidOverlay \
-	IconPackFilledSettingsOverlay \
-	IconPackFilledSystemUIOverlay \
-	IconPackRoundedAndroidOverlay \
-	IconPackRoundedSettingsOverlay \
-	IconPackRoundedSystemUIOverlay \
 	IconShapeRoundedRectOverlay \
 	IconShapeSquircleOverlay \
 	IconShapeTeardropOverlay \
