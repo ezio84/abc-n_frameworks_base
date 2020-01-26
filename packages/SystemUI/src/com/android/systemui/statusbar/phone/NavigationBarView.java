@@ -758,10 +758,6 @@ public class NavigationBarView extends FrameLayout implements
                 showSwipeUpUI ? mQuickStepAccessibilityDelegate : null);
     }
 
-    public void setPartialScreenshot(boolean active) {
-        mEdgeBackGestureHandler.setPartialScreenshot(active);
-    }
-
     public void setEdgeGestureDeadZone() {
         mEdgeBackGestureHandler.setEdgeGestureDeadZone();
     }

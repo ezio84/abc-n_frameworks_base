@@ -116,5 +116,4 @@ interface IStatusBarService
      * ABC
      */
     void toggleCameraFlash();
-    void setPartialScreenshot(boolean active);
 }

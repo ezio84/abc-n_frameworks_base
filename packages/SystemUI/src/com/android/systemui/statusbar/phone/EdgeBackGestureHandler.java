@@ -170,7 +170,6 @@ public class EdgeBackGestureHandler implements DisplayListener {
     private RegionSamplingHelper mRegionSamplingHelper;
     private int mLeftInset;
     private int mRightInset;
-    private boolean mPartialScreenshotActive;
 
     public EdgeBackGestureHandler(Context context, OverviewProxyService overviewProxyService) {
         final Resources res = context.getResources();
@@ -358,10 +357,6 @@ public class EdgeBackGestureHandler implements DisplayListener {
         cancelEv.recycle();
     }
 
-    public void setPartialScreenshot(boolean active) {
-        mPartialScreenshotActive = active;
-    }
-
     public void setEdgeGestureDeadZone() {
         int mode = Settings.System.getIntForUser(mContext.getContentResolver(),
             Settings.System.EDGE_GESTURE_Y_DEAD_ZONE, 0,
@@ -389,8 +384,6 @@ public class EdgeBackGestureHandler implements DisplayListener {
             // either the bouncer is showing or the notification panel is hidden
             int stateFlags = mOverviewProxyService.getSystemUiStateFlags();
             mIsOnLeftEdge = ev.getX() <= mEdgeWidth + mLeftInset;
-            if (mPartialScreenshotActive && mIsOnLeftEdge) return;
-
             mInRejectedExclusion = false;
             mAllowGesture = !QuickStepContract.isBackGestureDisabled(stateFlags)
                     && isWithinTouchRegion((int) ev.getX(), (int) ev.getY());
@@ -408,8 +401,6 @@ public class EdgeBackGestureHandler implements DisplayListener {
                 mThresholdCrossed = false;
             }
         } else if (mAllowGesture) {
-            if (mPartialScreenshotActive && mIsOnLeftEdge) return;
-
             if (!mThresholdCrossed) {
                 if (action == MotionEvent.ACTION_POINTER_DOWN) {
                     // We do not support multi touch for back gesture
