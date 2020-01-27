@@ -17,9 +17,19 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <string name="screenrecord_stopdot_label">Mostra pulsante stop</string>
-    <string name="screenrecord_low_quality_label">Qualità bassa</string>
-
     <string name="global_action_restart_advanced">Avanzate</string>
+
+    <string name="screenrecord_dialog_title">Avviare il registratore video?</string>
+    <string name="screenrecord_dialog_summary">Il registratore video avrà accesso a tutte le informazioni visibili a schermo e in riproduzione, inclusi messaggi, foto e audio.</string>
+    <string name="screenrecord_dialog_settings">Impostazioni</string>
+    <string name="screenrecord_dialog_start">Avvia registrazione</string>
+    <string name="screenrecord_dialog_cancel">Annulla</string>
+    <string name="screenrecord_audio_title">Registra audio</string>
+    <string name="screenrecord_audio_summary">Regitra audio durante la riproduzione</string>
+    <string name="screenrecord_taps_title">Mostra tocchi</string>
+    <string name="screenrecord_taps_summary">Mostra il puntatore dei tocchi durante la registrazione</string>
+    <string name="screenrecord_stopdot_title">Mostra pulsante stop</string>
+    <string name="screenrecord_stopdot_summary">Mostra un pulsante per fermare la registrazione con un tocco. Premilo a lungo per spostarlo sul lato opposto.</string>
+    <string name="screenrecord_low_quality_title">Bassa qualità</string>
+    <string name="screenrecord_low_quality_summary">Registra a bassa qualità per salvare spazio sul dispositivo</string>
 </resources>
