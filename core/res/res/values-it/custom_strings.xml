@@ -24,4 +24,6 @@
     <string name="reboot_to_bootloader_message">Riavvio in bootloader</string>
     <string name="reboot_title">Riavvio</string>
     <string name="reboot_message">Riavvio in corso</string>
+
+    <string name="bluetooth_airplane_mode_toast">Il bluetooth resterà attivo in modalità aereo</string>
 </resources>
