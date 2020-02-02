@@ -4656,6 +4656,12 @@ public final class Settings {
         public static final String EDGE_GESTURE_Y_DEAD_ZONE = "edge_gesture_y_dead_zone";
 
         /**
+         * Wheter to trigger partial screenshot action on normal or long click for globalactions Screenshot button
+         * @hide
+         */
+        public static final String PARTIAL_SCREENSHOT_AS_DEFAULT = "partial_screenshot_as_default";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
