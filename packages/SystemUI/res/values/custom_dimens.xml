@@ -24,4 +24,7 @@
 
     <!-- Qs visibility -->
     <dimen name="qs_tile_height_wo_label">64dp</dimen>
+
+    <!-- Smartspace -->
+    <dimen name="smartspace_icon_shadow">1dp</dimen>
 </resources>
