@@ -18,18 +18,9 @@
 <resources>
     <dimen name="screenrecord_dot_size">48dp</dimen>
 
-    <!-- Network traffic monitor -->
-    <dimen name="net_traffic_multi_text_size">8dp</dimen>
-    <dimen name="net_traffic_txt_img_padding">2dp</dimen>
-
     <!-- Qs visibility -->
     <dimen name="qs_tile_height_wo_label">64dp</dimen>
 
     <!-- Smartspace -->
     <dimen name="smartspace_icon_shadow">1dp</dimen>
-
-    <!-- Network traffic monitor -->
-    <dimen name="net_traffic_sb_multi_text_size">13dp</dimen>
-    <dimen name="net_traffic_multi_text_size">8dp</dimen>
-    <dimen name="net_traffic_txt_img_padding">2dp</dimen>
 </resources>
