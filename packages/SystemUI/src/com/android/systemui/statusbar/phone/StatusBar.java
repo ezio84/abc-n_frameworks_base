@@ -237,10 +237,6 @@ import com.android.systemui.tuner.TunerService;
 import com.android.systemui.util.InjectionInflationController;
 import com.android.systemui.volume.VolumeComponent;
 
-import com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle;
-import com.google.android.systemui.NotificationLockscreenUserManagerGoogle;
-import com.google.android.systemui.smartspace.SmartSpaceController;
-
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -673,7 +669,7 @@ public class StatusBar extends SystemUI implements DemoMode,
         mBubbleController = Dependency.get(BubbleController.class);
         mBubbleController.setExpandListener(mBubbleExpandListener);
         mActivityIntentHelper = new ActivityIntentHelper(mContext);
-        final KeyguardSliceProvider sliceProvider = KeyguardSliceProviderGoogle.getAttachedInstance();
+        final KeyguardSliceProvider sliceProvider = KeyguardSliceProvider.getAttachedInstance();
         if (sliceProvider != null) {
             sliceProvider.initDependencies(mMediaManager, mStatusBarStateController,
                     mKeyguardBypassController, DozeParameters.getInstance(mContext));
@@ -807,7 +803,6 @@ public class StatusBar extends SystemUI implements DemoMode,
         int disabledFlags2 = result.mDisabledFlags2;
         Dependency.get(InitController.class).addPostInitTask(
                 () -> setUpDisableFlags(disabledFlags1, disabledFlags2));
-        ((NotificationLockscreenUserManagerGoogle) Dependency.get(NotificationLockscreenUserManager.class)).updateAodVisibilitySettings();
     }
 
     // ================================================================================
@@ -1888,7 +1883,7 @@ public class StatusBar extends SystemUI implements DemoMode,
     }
 
     private void setPulseOnNewTracks() {
-        final KeyguardSliceProvider sliceProvider = KeyguardSliceProviderGoogle.getAttachedInstance();
+        final KeyguardSliceProvider sliceProvider = KeyguardSliceProvider.getAttachedInstance();
         if (sliceProvider != null) {
             sliceProvider.setPulseOnNewTracks(Settings.System.getIntForUser(mContext.getContentResolver(),
                     Settings.System.PULSE_ON_NEW_TRACKS, 1,
@@ -2645,7 +2640,6 @@ public class StatusBar extends SystemUI implements DemoMode,
         for (Map.Entry<String, ?> entry : Prefs.getAll(mContext).entrySet()) {
             pw.print("  "); pw.print(entry.getKey()); pw.print("="); pw.println(entry.getValue());
         }
-        SmartSpaceController.get(this.mContext).dump(fd, pw, args);
     }
 
     static void dumpBarTransitions(PrintWriter pw, String var, BarTransitions transitions) {
@@ -2918,7 +2912,6 @@ public class StatusBar extends SystemUI implements DemoMode,
         mLockscreenWallpaper.setCurrentUser(newUserId);
         mScrimController.setCurrentUser(newUserId);
         mWallpaperChangedReceiver.onReceive(mContext, null);
-        SmartSpaceController.get(this.mContext).reloadData();
     }
 
     /**
@@ -4409,7 +4402,7 @@ public class StatusBar extends SystemUI implements DemoMode,
     }
 
     public boolean isDoubleTapOnMusicTicker(float eventX, float eventY) {
-        final KeyguardSliceProvider sliceProvider = KeyguardSliceProviderGoogle.getAttachedInstance();
+        final KeyguardSliceProvider sliceProvider = KeyguardSliceProvider.getAttachedInstance();
         View trackTitleView = null;
         if (mNotificationPanel != null) {
             trackTitleView = mNotificationPanel.getKeyguardStatusView().getKeyguardSliceView().getTitleView();
