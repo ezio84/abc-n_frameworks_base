@@ -114,6 +114,8 @@ public class NavigationBarEdgePanel extends View {
     private static final Interpolator RUBBER_BAND_INTERPOLATOR_APPEAR
             = new PathInterpolator(1.0f / RUBBER_BAND_AMOUNT_APPEAR, 1.0f, 1.0f, 1.0f);
 
+    private static final int LONG_SWIPE_ACTION_TIMEOUT = 10000; //ms
+
     private final VibratorHelper mVibratorHelper;
 
     /**
@@ -167,6 +169,11 @@ public class NavigationBarEdgePanel extends View {
     private float mStartX;
     private float mStartY;
     private float mCurrentAngle;
+
+    private boolean mLongSwipe;
+    private long mStartTime;
+    private long mEndTime;
+
     /**
      * The current translation of the arrow
      */
@@ -391,6 +398,7 @@ public class NavigationBarEdgePanel extends View {
                 resetOnDown();
                 mStartX = event.getX();
                 mStartY = event.getY();
+                mStartTime = System.currentTimeMillis();
                 setVisibility(VISIBLE);
                 break;
             }
@@ -401,18 +409,27 @@ public class NavigationBarEdgePanel extends View {
             // Fall through
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL: {
-                if (mTriggerBack) {
-                    triggerBack();
-                } else {
-                    if (mTranslationAnimation.isRunning()) {
-                        mTranslationAnimation.addEndListener(mSetGoneEndListener);
-                    } else {
-                        setVisibility(GONE);
-                    }
+                mEndTime = System.currentTimeMillis();
+                mLongSwipe = ((mEndTime - mStartTime) >= LONG_SWIPE_ACTION_TIMEOUT);
+                boolean mHandleBack = !mLongSwipe;
+                if (mLongSwipe) {
+                    // do something
                 }
-                mVelocityTracker.recycle();
-                mVelocityTracker = null;
-                break;
+
+                if (mHandleBack) {
+                    if (mTriggerBack) {
+                        triggerBack();
+                    } else {
+                        if (mTranslationAnimation.isRunning()) {
+                            mTranslationAnimation.addEndListener(mSetGoneEndListener);
+                        } else {
+                            setVisibility(GONE);
+                        }
+                    }
+                    mVelocityTracker.recycle();
+                    mVelocityTracker = null;
+                    break;
+                }
             }
         }
     }
