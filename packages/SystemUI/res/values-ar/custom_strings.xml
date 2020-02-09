@@ -35,4 +35,5 @@
     <string name="quick_settings_adb_network">شبكة ADB</string>
     <string name="quick_settings_network_adb_enabled_label">ADB عبر الشبكة</string>
     <string name="quick_settings_network_adb_disabled_label">ADB عبر الشبكة</string>
+    <!-- Smartspace -->
 </resources>

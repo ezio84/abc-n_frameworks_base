@@ -37,4 +37,5 @@
     <string name="quick_settings_network_adb_enabled_label">Ağ üzerinden Adb</string>
     <string name="quick_settings_network_adb_disabled_label">Ağ üzerinden Adb</string>
     <string name="adb_network_forced_tcp_warn"><xliff:g id="port">%1$s</xliff:g> portunda ADB ağı zorunlu olarak etkinleştirildi</string>
+    <!-- Smartspace -->
 </resources>

@@ -31,7 +31,7 @@
     <string name="screenrecord_stopdot_title">Показать точку остановки</string>
     <string name="screenrecord_stopdot_summary">Показывать красную точку для остановки записи одним касанием. Длительное нажатие для перемещения на другую сторону.</string>
     <string name="screenrecord_low_quality_title">Низкое качество</string>
-    <string name="screenrecord_low_quality_summary">Запись в сниженном качестве для экономии места на Вашем устройстве</string>
+    <string name="screenrecord_low_quality_summary">Запись в пониженном качестве для экономии места на Вашем устройстве</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Снимок экрана</string>
     <string name="global_action_screenrecord">Запись экрана</string>
@@ -51,4 +51,16 @@
     <string name="quick_settings_network_adb_enabled_label">ADB по сети</string>
     <string name="quick_settings_network_adb_disabled_label">ADB по сети</string>
     <string name="adb_network_forced_tcp_warn">Сеть ADB принудительно через порт: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Режим погружения</string>
+    <string name="quick_settings_immersive_tile_off">Погружение выкл</string>
+    <string name="quick_settings_immersive_tile_statusbar">Скрытие строки состояния</string>
+    <string name="quick_settings_immersive_tile_navbar">Скрытие панели навигации</string>
+    <string name="quick_settings_immersive_tile_full">Полноэкранный режим</string>
+    <string name="quick_settings_monotoggle_tile">Аудио режим</string>
+    <string name="quick_settings_monotoggle_tile_mono">Монофонический звук</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Стереозвук</string>
+    <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Сейчас</string>
+    <string name="smartspace_pill_text_format">%1$s: %2$s</string>
 </resources>

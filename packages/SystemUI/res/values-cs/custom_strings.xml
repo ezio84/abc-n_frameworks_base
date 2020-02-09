@@ -51,4 +51,16 @@
     <string name="quick_settings_network_adb_enabled_label">ADB přes síť</string>
     <string name="quick_settings_network_adb_disabled_label">ADB přes síť</string>
     <string name="adb_network_forced_tcp_warn">Síť ADB vynucena na portu: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Pohlcující režim</string>
+    <string name="quick_settings_immersive_tile_off">Pohlcující režim vypnutý</string>
+    <string name="quick_settings_immersive_tile_statusbar">Pohlcující stavová lišta</string>
+    <string name="quick_settings_immersive_tile_navbar">Pohlcující navigační panel</string>
+    <string name="quick_settings_immersive_tile_full">Pohlcující režim celé obrazovky</string>
+    <string name="quick_settings_monotoggle_tile">Režim zvuku</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo</string>
+    <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Nyní</string>
+    <string name="smartspace_pill_text_format">%1$s: %2$s</string>
 </resources>

@@ -31,4 +31,5 @@
     <string name="quick_settings_sound_search">Äänihaku</string>
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB verkko</string>
+    <!-- Smartspace -->
 </resources>

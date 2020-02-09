@@ -56,4 +56,11 @@
     <string name="quick_settings_immersive_tile_statusbar">Immersive Statusleiste</string>
     <string name="quick_settings_immersive_tile_navbar">Immersive Navigationsleiste</string>
     <string name="quick_settings_immersive_tile_full">Immersiv vollständig</string>
+    <string name="quick_settings_monotoggle_tile">Audio Modus</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono Audio</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo Audio</string>
+    <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Jetzt</string>
+    <string name="smartspace_pill_text_format">%1$s: %2$s</string>
 </resources>

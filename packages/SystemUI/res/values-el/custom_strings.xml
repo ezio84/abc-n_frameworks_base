@@ -36,4 +36,5 @@
     <string name="quick_settings_adb_network">Δίκτυο ADB</string>
     <string name="quick_settings_network_adb_enabled_label">Adb πάνω σε Δίκτυο</string>
     <string name="quick_settings_network_adb_disabled_label">Adb πάνω σε Δίκτυο</string>
+    <!-- Smartspace -->
 </resources>

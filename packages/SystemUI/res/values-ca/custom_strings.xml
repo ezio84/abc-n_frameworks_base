@@ -37,4 +37,5 @@
     <string name="quick_settings_adb_network">Xarxa ADB</string>
     <string name="quick_settings_network_adb_enabled_label">ADB per la xarxa</string>
     <string name="quick_settings_network_adb_disabled_label">ADB per la xarxa</string>
+    <!-- Smartspace -->
 </resources>
