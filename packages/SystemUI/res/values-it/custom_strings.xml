@@ -32,4 +32,6 @@
     <string name="screenrecord_stopdot_summary">Mostra un pulsante per fermare la registrazione con un tocco. Premilo a lungo per spostarlo sul lato opposto.</string>
     <string name="screenrecord_low_quality_title">Bassa qualità</string>
     <string name="screenrecord_low_quality_summary">Registra a bassa qualità per salvare spazio sul dispositivo</string>
+
+    <string name="recents_app_killed">App terminata</string>
 </resources>

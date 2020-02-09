@@ -17,8 +17,14 @@ package com.android.systemui.statusbar.phone;
 
 import static android.view.Display.INVALID_DISPLAY;
 
+import android.app.ActivityManager;
 import android.content.Context;
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.ParceledListSlice;
+import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
@@ -54,14 +60,21 @@ import android.view.ViewConfiguration;
 import android.view.WindowManager;
 import android.view.WindowManagerGlobal;
 
+import androidx.annotation.Nullable;
+
 import com.android.systemui.Dependency;
 import com.android.systemui.R;
 import com.android.systemui.bubbles.BubbleController;
 import com.android.systemui.recents.OverviewProxyService;
+import com.android.systemui.shared.system.ActivityManagerWrapper;
+import com.android.systemui.shared.system.PackageManagerWrapper;
 import com.android.systemui.shared.system.QuickStepContract;
+import com.android.systemui.shared.system.TaskStackChangeListener;
 import com.android.systemui.shared.system.WindowManagerWrapper;
 
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Executor;
 
 /**
@@ -171,6 +184,17 @@ public class EdgeBackGestureHandler implements DisplayListener {
     private int mLeftInset;
     private int mRightInset;
 
+    private int mRunningTaskId;
+    private final IntentFilter mDefaultHomeIntentFilter;
+    private static final String[] DEFAULT_HOME_CHANGE_ACTIONS = new String[] {
+            PackageManagerWrapper.ACTION_PREFERRED_ACTIVITY_CHANGED,
+            Intent.ACTION_BOOT_COMPLETED,
+            Intent.ACTION_PACKAGE_ADDED,
+            Intent.ACTION_PACKAGE_CHANGED,
+            Intent.ACTION_PACKAGE_REMOVED
+    };
+    @Nullable private ComponentName mDefaultHome;
+
     public EdgeBackGestureHandler(Context context, OverviewProxyService overviewProxyService) {
         final Resources res = context.getResources();
         mContext = context;
@@ -192,7 +216,11 @@ public class EdgeBackGestureHandler implements DisplayListener {
         updateCurrentUserResources(res);
         
         setEdgeGestureDeadZone();
-        
+
+        mDefaultHomeIntentFilter = new IntentFilter();
+        for (String action : DEFAULT_HOME_CHANGE_ACTIONS) {
+            mDefaultHomeIntentFilter.addAction(action);
+        }
     }
 
     public void updateCurrentUserResources(Resources res) {
@@ -260,6 +288,8 @@ public class EdgeBackGestureHandler implements DisplayListener {
                 Log.e(TAG, "Failed to unregister window manager callbacks", e);
             }
 
+            ActivityManagerWrapper.getInstance().unregisterTaskStackListener(mTaskStackChangeListener);
+            mContext.unregisterReceiver(mDefaultHomeBroadcastReceiver);
         } else {
             updateDisplaySize();
             mContext.getSystemService(DisplayManager.class).registerDisplayListener(this,
@@ -312,7 +342,62 @@ public class EdgeBackGestureHandler implements DisplayListener {
                             return mSamplingRect;
                         }
                     });
+            ActivityManager.RunningTaskInfo runningTaskInfo =
+                    ActivityManagerWrapper.getInstance().getRunningTask();
+            mRunningTaskId = runningTaskInfo == null ? 0 : runningTaskInfo.taskId;
+            mDefaultHome = getCurrentDefaultHome();
+            mContext.registerReceiver(mDefaultHomeBroadcastReceiver, mDefaultHomeIntentFilter);
+            ActivityManagerWrapper.getInstance().registerTaskStackListener(mTaskStackChangeListener);
         }
+    }
+
+    private final BroadcastReceiver mDefaultHomeBroadcastReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            mDefaultHome = getCurrentDefaultHome();
+        }
+    };
+
+    private final TaskStackChangeListener mTaskStackChangeListener =
+            new TaskStackChangeListener() {
+                @Override
+                public void onTaskMovedToFront(ActivityManager.RunningTaskInfo taskInfo) {
+                    handleTaskStackTopChanged(taskInfo.taskId, taskInfo.topActivity);
+                }
+
+                @Override
+                public void onTaskCreated(int taskId, ComponentName componentName) {
+                    handleTaskStackTopChanged(taskId, componentName);
+                }
+            };
+
+    private void handleTaskStackTopChanged(int taskId, @Nullable ComponentName taskComponentName) {
+        if (mRunningTaskId == taskId || taskComponentName == null) {
+            return;
+        }
+        mRunningTaskId = taskId;
+        mEdgePanel.setRunningTask(taskComponentName.equals(mDefaultHome), taskId, taskComponentName);
+    }
+
+    @Nullable
+    private ComponentName getCurrentDefaultHome() {
+        List<ResolveInfo> homeActivities = new ArrayList<>();
+        ComponentName defaultHome = PackageManagerWrapper.getInstance().getHomeActivities(homeActivities);
+        if (defaultHome != null) {
+            return defaultHome;
+        }
+
+        int topPriority = Integer.MIN_VALUE;
+        ComponentName topComponent = null;
+        for (ResolveInfo resolveInfo : homeActivities) {
+            if (resolveInfo.priority > topPriority) {
+                topComponent = resolveInfo.activityInfo.getComponentName();
+                topPriority = resolveInfo.priority;
+            } else if (resolveInfo.priority == topPriority) {
+                topComponent = null;
+            }
+        }
+        return topComponent;
     }
 
     private void onInputEvent(InputEvent ev) {
