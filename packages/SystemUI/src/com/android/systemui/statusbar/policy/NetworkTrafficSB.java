@@ -3,6 +3,8 @@ package com.android.systemui.statusbar.policy;
 import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.Typeface;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.text.style.RelativeSizeSpan;
 import android.util.AttributeSet;
 
@@ -49,7 +51,11 @@ public class NetworkTrafficSB extends NetworkTraffic implements DarkReceiver {
     @Override
     protected void setMode() {
         super.setMode();
-        mIsEnabled = mIsEnabled && !Utils.hasNotch(mContext);
+        boolean enabledInSbar = !Utils.hasNotch(mContext) &&
+                Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.NETWORK_TRAFFIC_STATE_SB, 0,
+                UserHandle.USER_CURRENT) == 1;
+        mIsEnabled = mIsEnabled && enabledInSbar;
     }
 
     @Override
