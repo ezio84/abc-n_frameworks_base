@@ -462,6 +462,12 @@ public class EdgeBackGestureHandler implements DisplayListener {
         }
     }
 
+    public void setKillAppTimeout() {
+        if (mEdgePanel != null) {
+            mEdgePanel.setKillAppTimeout();
+        }
+    }
+    
     private void onMotionEvent(MotionEvent ev) {
         int action = ev.getActionMasked();
         if (action == MotionEvent.ACTION_DOWN) {

@@ -767,6 +767,10 @@ public class NavigationBarView extends FrameLayout implements
         mEdgeBackGestureHandler.setEdgeGestureDeadZone();
     }
 
+    public void setKillAppTimeout() {
+        mEdgeBackGestureHandler.setKillAppTimeout();
+    }
+
     public void setPartialScreenshot(boolean active) {
         mBlockedGesturalNavigation = active;
         updateDisabledSystemUiStateFlags();

@@ -4669,6 +4669,12 @@ public final class Settings {
         public static final String PARTIAL_SCREENSHOT_AS_DEFAULT = "partial_screenshot_as_default";
 
         /**
+         * Gestures nav: kill app long swipe timeout
+         * @hide
+         */
+        public static final String KILL_APP_LONGSWIPE_TIMEOUT = "kill_app_longswipe_timeout";
+
+        /**
          * IMPORTANT: If you add a new public settings you also have to add it to
          * PUBLIC_SETTINGS below. If the new setting is hidden you have to add
          * it to PRIVATE_SETTINGS below. Also add a validator that can validate
