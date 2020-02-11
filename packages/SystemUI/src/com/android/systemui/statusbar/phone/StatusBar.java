@@ -1822,9 +1822,6 @@ public class StatusBar extends SystemUI implements DemoMode,
             resolver.registerContentObserver(Settings.Secure.getUriFor(
                     Settings.Secure.LOCKSCREEN_CLOCK_SELECTION),
                     false, this, UserHandle.USER_ALL);
-            resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.KILL_APP_LONGSWIPE_TIMEOUT),
-                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
@@ -1855,13 +1852,9 @@ public class StatusBar extends SystemUI implements DemoMode,
                 setLockScreenMediaArt();
             } else if (uri.equals(Settings.System.getUriFor(
                     Settings.System.EDGE_GESTURE_Y_DEAD_ZONE))) {
-                setGestureNavOptions();
-            } else if (uri.equals(Settings.Secure.getUriFor(
-                    Settings.Secure.LOCKSCREEN_CLOCK_SELECTION))) {
+                setEdgeGestureDeadZone();
+            } else if (uri.equals(Settings.Secure.getUriFor(Settings.Secure.LOCKSCREEN_CLOCK_SELECTION))) {
                 updateKeyguardStatusSettings();
-            } else if (uri.equals(Settings.System.getUriFor(
-                    Settings.System.KILL_APP_LONGSWIPE_TIMEOUT))) {
-                setGestureNavOptions();
             }
         }
 
@@ -1873,7 +1866,7 @@ public class StatusBar extends SystemUI implements DemoMode,
             setUseLessBoringHeadsUp();
             setLockScreenMediaBlurLevel();
             setLockScreenMediaArt();
-            setGestureNavOptions();
+            setEdgeGestureDeadZone();
             updateKeyguardStatusSettings();
         }
     }
@@ -1882,10 +1875,9 @@ public class StatusBar extends SystemUI implements DemoMode,
         mNotificationPanel.updateKeyguardStatusSettings();
     }
 
-    private void setGestureNavOptions() {
+    private void setEdgeGestureDeadZone() {
         if (getNavigationBarView() != null) {
             getNavigationBarView().setEdgeGestureDeadZone();
-            getNavigationBarView().setKillAppTimeout();
         }
     }
 

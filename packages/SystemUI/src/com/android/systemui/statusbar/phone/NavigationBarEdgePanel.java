@@ -17,22 +17,14 @@
 package com.android.systemui.statusbar.phone;
 
 import android.animation.ValueAnimator;
-import android.app.Activity;
-import android.app.ActivityManagerNative;
-import android.app.IActivityManager;
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.Canvas;;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
-import android.os.RemoteException;
 import android.os.SystemClock;
-import android.os.UserHandle;
 import android.os.VibrationEffect;
-import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.MathUtils;
 import android.view.ContextThemeWrapper;
@@ -41,7 +33,6 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.view.animation.Interpolator;
 import android.view.animation.PathInterpolator;
-import android.widget.Toast;
 
 import com.android.settingslib.Utils;
 import com.android.systemui.Dependency;
@@ -123,12 +114,6 @@ public class NavigationBarEdgePanel extends View {
     private static final Interpolator RUBBER_BAND_INTERPOLATOR_APPEAR
             = new PathInterpolator(1.0f / RUBBER_BAND_AMOUNT_APPEAR, 1.0f, 1.0f, 1.0f);
 
-    private int mTImeout = 5000; //ms
-    private boolean mIsLauncherShowing = true;
-    private int mRunningTaskId = 0;
-    private ComponentName mTaskComponentName = null;
-    private Context mContext;
-
     private final VibratorHelper mVibratorHelper;
 
     /**
@@ -182,11 +167,6 @@ public class NavigationBarEdgePanel extends View {
     private float mStartX;
     private float mStartY;
     private float mCurrentAngle;
-
-    private boolean mLongSwipe;
-    private long mStartTime;
-    private long mEndTime;
-
     /**
      * The current translation of the arrow
      */
@@ -265,7 +245,6 @@ public class NavigationBarEdgePanel extends View {
 
     public NavigationBarEdgePanel(Context context) {
         super(context);
-        mContext = context;
 
         mVibratorHelper = Dependency.get(VibratorHelper.class);
 
@@ -338,8 +317,6 @@ public class NavigationBarEdgePanel extends View {
         mSwipeThreshold = context.getResources()
                 .getDimension(R.dimen.navigation_edge_action_drag_threshold);
         setVisibility(GONE);
-
-        setKillAppTimeout();
     }
 
     @Override
@@ -400,26 +377,6 @@ public class NavigationBarEdgePanel extends View {
                 (int) (samplingRect.top + height));
     }
 
-    public void setKillAppTimeout() {
-        int timeout = Settings.System.getIntForUser(mContext.getContentResolver(),
-            Settings.System.KILL_APP_LONGSWIPE_TIMEOUT, 0,
-            UserHandle.USER_CURRENT);
-        switch (timeout) {
-            default: // 0 - slowest
-                mTImeout = 5000;
-                break;
-            case 1:
-                mTImeout = 4000;
-                break;
-            case 2: 
-                mTImeout = 3000;
-                break;
-            case 3: // fastest
-                mTImeout = 2000;
-                break;
-        }
-    }
-
     /**
      * Updates the UI based on the motion events passed in device co-ordinates
      */
@@ -434,7 +391,6 @@ public class NavigationBarEdgePanel extends View {
                 resetOnDown();
                 mStartX = event.getX();
                 mStartY = event.getY();
-                mStartTime = System.currentTimeMillis();
                 setVisibility(VISIBLE);
                 break;
             }
@@ -445,50 +401,20 @@ public class NavigationBarEdgePanel extends View {
             // Fall through
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL: {
-                mEndTime = System.currentTimeMillis();
-                mLongSwipe = ((mEndTime - mStartTime) >= mTImeout);
-                boolean killedOrLongSwipe = false;
-                if (mLongSwipe && !mIsLauncherShowing && mTaskComponentName != null &&
-                        mContext.checkCallingOrSelfPermission(android.Manifest.permission.FORCE_STOP_PACKAGES)
-                        == PackageManager.PERMISSION_GRANTED) {
-                    resetOnDown();
-                    IActivityManager iam = ActivityManagerNative.getDefault();
-                    try {
-                        iam.forceStopPackage(mTaskComponentName.getPackageName(), UserHandle.USER_CURRENT); // kill app
-                        iam.removeTask(mRunningTaskId); // remove app from recents
-                        killedOrLongSwipe = true;
-                    } catch (RemoteException e) {
-                        killedOrLongSwipe = false;
-                    }
-                    if (killedOrLongSwipe) {
-                        Toast appKilled = Toast.makeText(mContext, R.string.recents_app_killed,
-                                Toast.LENGTH_SHORT);
-                        appKilled.show();
-                    }
-                }
-
-                if (!killedOrLongSwipe) {
-                    if (mTriggerBack) {
-                        triggerBack();
+                if (mTriggerBack) {
+                    triggerBack();
+                } else {
+                    if (mTranslationAnimation.isRunning()) {
+                        mTranslationAnimation.addEndListener(mSetGoneEndListener);
                     } else {
-                        if (mTranslationAnimation.isRunning()) {
-                            mTranslationAnimation.addEndListener(mSetGoneEndListener);
-                        } else {
-                            setVisibility(GONE);
-                        }
+                        setVisibility(GONE);
                     }
-                    mVelocityTracker.recycle();
-                    mVelocityTracker = null;
-                    break;
                 }
+                mVelocityTracker.recycle();
+                mVelocityTracker = null;
+                break;
             }
         }
-    }
-
-    public void setRunningTask(boolean launcherShowing, int taskId, ComponentName taskComponentName) {
-        mIsLauncherShowing = launcherShowing;
-        mRunningTaskId = taskId;
-        mTaskComponentName = taskComponentName;
     }
 
     @Override
