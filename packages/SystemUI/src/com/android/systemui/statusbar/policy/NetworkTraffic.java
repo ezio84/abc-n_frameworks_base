@@ -334,6 +334,7 @@ public class NetworkTraffic extends TextView {
         mAutoHideThreshold = Settings.System.getIntForUser(resolver,
                 Settings.System.NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD, 1,
                 UserHandle.USER_CURRENT);
+        setVisibility(View.GONE);
     }
 
     private void clearHandlerCallbacks() {

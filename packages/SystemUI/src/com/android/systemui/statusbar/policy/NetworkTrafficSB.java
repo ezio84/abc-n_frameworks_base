@@ -151,19 +151,26 @@ public class NetworkTrafficSB extends NetworkTraffic implements DarkReceiver, St
 
     public void onPanelExpanded(boolean isExpanded) {
         mStatusbarExpanded = isExpanded;
-        if (!mIsEnabled || mKeyguardShowing || !mSystemIconVisible) return;
-        quicklySetVisibility(isExpanded);
+        if (isExpanded) {
+          setVisibility(View.GONE);
+        }
+        maybeRestoreVisibility();
     }
 
     public void setKeyguardShowing(boolean showing) {
         mKeyguardShowing = showing;
-        if (!mIsEnabled || mStatusbarExpanded || !mSystemIconVisible) return;
-        quicklySetVisibility(showing);
+        if (showing) {
+          setVisibility(View.GONE);
+        }
+        maybeRestoreVisibility();
     }
 
-    private void quicklySetVisibility(boolean hide) {
-        setVisibility(hide ? View.GONE : (restoreViewQuickly() ? View.VISIBLE : View.GONE));
-        // then let the traffic handler do its checks
-        update();
+    private void maybeRestoreVisibility() {
+        if (mIsEnabled && !mStatusbarExpanded && !mKeyguardShowing && mSystemIconVisible
+           && restoreViewQuickly()) {
+          setVisibility(View.VISIBLE);
+          // then let the traffic handler do its checks
+          update();
+        }
     }
 }
