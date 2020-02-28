@@ -191,6 +191,20 @@ public class Utils {
                 } catch (RemoteException e) {}
             }
         }
+
+        // Toggle notifications panel
+        public static void toggleNotifications() {
+            IStatusBarService service = getStatusBarService();
+            if (service != null) {
+                try {
+                    service.togglePanel();
+                } catch (RemoteException e) {}
+            }
+        }
+    }
+
+    public static void toggleNotifications() {
+        FireActions.toggleNotifications();
     }
 
     public static void clearAllNotifications() {
