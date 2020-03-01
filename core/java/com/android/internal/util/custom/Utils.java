@@ -155,6 +155,10 @@ public class Utils {
         FireActions.toggleCameraFlash();
     }
 
+    public static void killForegroundApp() {
+        FireActions.killForegroundApp();
+    }
+
     private static final class FireActions {
         private static IStatusBarService mStatusBarService = null;
 
@@ -165,6 +169,17 @@ public class Utils {
                             ServiceManager.getService("statusbar"));
                 }
                 return mStatusBarService;
+            }
+        }
+
+        public static void killForegroundApp() {
+            IStatusBarService service = getStatusBarService();
+            if (service != null) {
+                try {
+                    service.killForegroundApp();
+                } catch (RemoteException e) {
+                    // do nothing.
+                }
             }
         }
 
