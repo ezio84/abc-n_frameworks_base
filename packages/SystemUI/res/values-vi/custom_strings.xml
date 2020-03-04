@@ -18,10 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Bắt đầu ghi âm với Màn hình máy ghi âm?</string>
+    <string name="screenrecord_dialog_summary">Màn hình máy ghi âm sẽ có thể truy cập để tất cả các thông tin, đó là hiển thị trên màn hình của bạn hoặc chơi từ điện thoại, trong khi ghi âm. Này, bao gồm các thông tin như hình ảnh và âm thanh mà bạn chơi.</string>
+    <string name="screenrecord_dialog_settings">Cài đặt</string>
+    <string name="screenrecord_dialog_start">Bắt Đầu Ghi Âm</string>
+    <string name="screenrecord_dialog_cancel">Hủy</string>
+    <string name="screenrecord_audio_title">Ghi âm</string>
+    <string name="screenrecord_audio_summary">Ghi âm thanh trong khi ghi âm</string>
+    <string name="screenrecord_taps_title">Show vòi</string>
+    <string name="screenrecord_taps_summary">Hiển thị giác phản hồi khi ghi âm</string>
+    <string name="screenrecord_stopdot_title">Show dừng lại dấu chấm</string>
+    <string name="screenrecord_stopdot_summary">Hiện một dấu chấm đỏ để ngăn chặn ghi âm với một vòi nước duy nhất. Tiểu nó để di chuyển nó sang bên kia.</string>
+    <string name="screenrecord_low_quality_title">Chất lượng thấp</string>
+    <string name="screenrecord_low_quality_summary">Ghi lại trong một kém chất lượng để tiết kiệm không gian trên điện thoại</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
+    <string name="global_action_screenshot_cust">Hình</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Mở máy màn hình.</string>
     <string name="global_action_restart_advanced">Nâng cao</string>
+    <string name="global_action_restart_recovery">Phục hồi</string>
+    <string name="global_action_restart_bootloader">Bộ</string>
+    <string name="global_action_restart_ui">Sắc</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Caffeine</string>
+    <string name="accessibility_quick_settings_caffeine_off">Cà phê đi</string>
+    <string name="accessibility_quick_settings_caffeine_on">Cafein</string>
+    <string name="quick_settings_sound_search">Âm thanh kiếm</string>
     <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">ADB mạng</string>
+    <string name="quick_settings_network_adb_enabled_label">Giám Net</string>
+    <string name="quick_settings_network_adb_disabled_label">Giám Net</string>
+    <string name="adb_network_forced_tcp_warn">ADB mạng buộc bật trên cổng: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Chế độ chìm</string>
+    <string name="quick_settings_immersive_tile_off">Nhập vai ra</string>
+    <string name="quick_settings_immersive_tile_statusbar">Nhập vai trạng thái</string>
+    <string name="quick_settings_immersive_tile_navbar">Nhập vai bạn</string>
+    <string name="quick_settings_immersive_tile_full">Nhập vai đầy đủ</string>
+    <string name="quick_settings_monotoggle_tile">Chế độ âm thanh</string>
+    <string name="quick_settings_monotoggle_tile_mono">Đơn âm sắc</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Âm thanh Stereo</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Bây giờ</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Chọn một ứng dụng</string>
 </resources>

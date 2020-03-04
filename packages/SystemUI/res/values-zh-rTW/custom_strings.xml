@@ -18,14 +18,22 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">开始记录与屏幕上的记录？</string>
+    <string name="screenrecord_dialog_summary">屏幕的录像机会有权访问所有的信息可见的屏幕上或从设备，同时记录。 这种信息包括诸如照片、信息和音频播放。</string>
     <string name="screenrecord_dialog_settings">設定</string>
     <string name="screenrecord_dialog_start">開始錄製</string>
     <string name="screenrecord_dialog_cancel">取消</string>
     <string name="screenrecord_audio_title">錄音</string>
+    <string name="screenrecord_audio_summary">录音的话记录</string>
     <string name="screenrecord_taps_title">顯示觸控回應</string>
+    <string name="screenrecord_taps_summary">显示出视觉的反馈，同时记录</string>
+    <string name="screenrecord_stopdot_title">显示停止点</string>
+    <string name="screenrecord_stopdot_summary">显示一个红点停止的记录与一个水龙头。 长按它移动到另一侧。</string>
     <string name="screenrecord_low_quality_title">低品質</string>
+    <string name="screenrecord_low_quality_summary">记录在一个较低质量的保存空间，在你的设备</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">螢幕截圖</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_running_services">開啟執行服務的螢幕。</string>
     <string name="global_action_restart_advanced">高級設置</string>
@@ -41,14 +49,18 @@
     <string name="quick_settings_adb_network">網路 ADB</string>
     <string name="quick_settings_network_adb_enabled_label">網路 ADB</string>
     <string name="quick_settings_network_adb_disabled_label">網路 ADB</string>
+    <string name="adb_network_forced_tcp_warn">亚行网络被迫启用在港口： <xliff:g id="port">%1$s</xliff:g></string>
     <string name="quick_settings_immersive_tile">全螢幕模式</string>
     <string name="quick_settings_immersive_tile_off">關閉沉浸模式</string>
     <string name="quick_settings_immersive_tile_statusbar">沉浸狀態列</string>
     <string name="quick_settings_immersive_tile_navbar">浸入式導覽列</string>
     <string name="quick_settings_immersive_tile_full">完整沉浸</string>
     <string name="quick_settings_monotoggle_tile">音樂模式</string>
+    <string name="quick_settings_monotoggle_tile_mono">单声道的音频</string>
+    <string name="quick_settings_monotoggle_tile_stereo">立体声音</string>
     <!-- Smartspace -->
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">現在</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
+    <string name="app_picker_dialog_title">选择一个应用程序</string>
 </resources>

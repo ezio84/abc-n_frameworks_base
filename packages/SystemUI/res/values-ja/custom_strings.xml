@@ -48,7 +48,7 @@
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB ネットワーク</string>
     <string name="quick_settings_network_adb_enabled_label">ネット経由の ADB</string>
-    <string name="quick_settings_network_adb_disabled_label">ネット経由の ADB</string>
+    <string name="quick_settings_network_adb_disabled_label">ADB売</string>
     <string name="adb_network_forced_tcp_warn">ポート<xliff:g id="port">%1$s</xliff:g>の ADB ネットワークが強制的に有効です</string>
     <string name="quick_settings_immersive_tile">全画面モード</string>
     <string name="quick_settings_immersive_tile_off">全画面モード OFF</string>
@@ -62,4 +62,5 @@
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">現在</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
+    <string name="app_picker_dialog_title">アプリを選択</string>
 </resources>

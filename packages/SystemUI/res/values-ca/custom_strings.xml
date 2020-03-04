@@ -18,6 +18,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Començar a enregistrar amb gravadora de Pantalla?</string>
+    <string name="screenrecord_dialog_summary">Pantalla gravadora tindrà accés a tota la informació que es mostra a la pantalla o jugar des del dispositiu durant la gravació. Això inclou informació, com ara fotografies, missatges, i d\'àudio que vostè juga.</string>
+    <string name="screenrecord_dialog_settings">Configuració</string>
+    <string name="screenrecord_dialog_start">Iniciar La Gravació</string>
+    <string name="screenrecord_dialog_cancel">Cancel·la</string>
+    <string name="screenrecord_audio_title">Registre d\'àudio</string>
+    <string name="screenrecord_audio_summary">Registre d\'àudio durant la gravació</string>
+    <string name="screenrecord_taps_title">Mostra de tocs</string>
+    <string name="screenrecord_taps_summary">Mostra informació visual durant la gravació</string>
+    <string name="screenrecord_stopdot_title">Mostra deixar de punt</string>
+    <string name="screenrecord_stopdot_summary">Mostra un punt vermell per aturar la gravació amb una sola aixeta. Longpress a moure-la a la cara oposada.</string>
+    <string name="screenrecord_low_quality_title">Baixa qualitat</string>
+    <string name="screenrecord_low_quality_summary">Registre a una menor qualitat per estalviar espai al dispositiu</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Captura de pantalla</string>
     <string name="global_action_screenrecord">Gravació</string>
@@ -36,5 +49,18 @@
     <string name="quick_settings_adb_network">Xarxa ADB</string>
     <string name="quick_settings_network_adb_enabled_label">ADB per la xarxa</string>
     <string name="quick_settings_network_adb_disabled_label">ADB per la xarxa</string>
+    <string name="adb_network_forced_tcp_warn">ADB xarxa obligat habilitat al port: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Mode immersiu</string>
+    <string name="quick_settings_immersive_tile_off">Immersiva fora</string>
+    <string name="quick_settings_immersive_tile_statusbar">Immersiva la barra d\'estat</string>
+    <string name="quick_settings_immersive_tile_navbar">Immersiva navbar</string>
+    <string name="quick_settings_immersive_tile_full">Immersió completa</string>
+    <string name="quick_settings_monotoggle_tile">Mode d\'àudio</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono d\'àudio</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Estèreo d\'àudio</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Ara</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Seleccioneu una aplicació</string>
 </resources>

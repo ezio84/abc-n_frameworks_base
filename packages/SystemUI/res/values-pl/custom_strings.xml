@@ -62,4 +62,5 @@
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">Teraz</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Wybierz aplikację</string>
 </resources>

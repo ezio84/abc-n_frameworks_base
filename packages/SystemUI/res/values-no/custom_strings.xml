@@ -18,13 +18,24 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Starte innspilling med Skjermen opptaker?</string>
+    <string name="screenrecord_dialog_summary">Skjermen opptaker vil ha tilgang til all informasjon som er synlig på skjermen eller spilt fra enheten mens opptaket. Dette inkluderer informasjon som bilder, meldinger og lyd som du spiller.</string>
     <string name="screenrecord_dialog_settings">Innstillinger</string>
     <string name="screenrecord_dialog_start">Start opptak</string>
     <string name="screenrecord_dialog_cancel">Avbryt</string>
     <string name="screenrecord_audio_title">Ta opp lyd</string>
+    <string name="screenrecord_audio_summary">Spille inn lyd under opptak</string>
+    <string name="screenrecord_taps_title">Vis kraner</string>
+    <string name="screenrecord_taps_summary">Vis visuell tilbakemelding mens opptak</string>
+    <string name="screenrecord_stopdot_title">Vis stoppe dot</string>
+    <string name="screenrecord_stopdot_summary">Vis en rød prikk for å stoppe opptaket med et enkelt trykk. Longpress det å flytte til motsatt side.</string>
+    <string name="screenrecord_low_quality_title">Lav kvalitet</string>
+    <string name="screenrecord_low_quality_summary">Ta opp i en lavere kvalitet for å spare plass på enheten</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Skjermdump</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Åpne Tjenester som Kjører skjermen.</string>
     <string name="global_action_restart_advanced">Avansert</string>
     <string name="global_action_restart_recovery">Recovery</string>
     <string name="global_action_restart_bootloader">Bootloader</string>
@@ -38,10 +49,18 @@
     <string name="quick_settings_adb_network">ADB nettverk</string>
     <string name="quick_settings_network_adb_enabled_label">ADB over nettverk</string>
     <string name="quick_settings_network_adb_disabled_label">ADB over nettverk</string>
+    <string name="adb_network_forced_tcp_warn">ADB nettverk tvunget aktivert på port: <xliff:g id="port">%1$s</xliff:g></string>
     <string name="quick_settings_immersive_tile">Fullskjermsmodus</string>
     <string name="quick_settings_immersive_tile_off">Fullskjerm av</string>
+    <string name="quick_settings_immersive_tile_statusbar">Engasjerende statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Engasjerende navbar</string>
+    <string name="quick_settings_immersive_tile_full">Oppslukende full</string>
+    <string name="quick_settings_monotoggle_tile">Audio-modus</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono lyd</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo lyd</string>
     <!-- Smartspace -->
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">Nå</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
+    <string name="app_picker_dialog_title">Velg en app</string>
 </resources>

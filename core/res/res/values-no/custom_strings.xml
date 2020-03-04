@@ -31,4 +31,5 @@
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">Trykk for å deaktivere feilsøk</string>
     <!-- Bluetooth service -->
+    <string name="bluetooth_airplane_mode_toast">Bluetooth vil bo på i flymodus</string>
 </resources>

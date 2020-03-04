@@ -31,4 +31,5 @@
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">Додирни да онемогућиш отклањање грешака.</string>
     <!-- Bluetooth service -->
+    <string name="bluetooth_airplane_mode_toast">Блуетоотх ће остати у режиму рада у авиону</string>
 </resources>

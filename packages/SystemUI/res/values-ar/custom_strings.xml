@@ -18,13 +18,28 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">بدء التسجيل مع مسجل الشاشة?</string>
+    <string name="screenrecord_dialog_summary">مسجل الشاشة سيكون لديك الوصول إلى جميع المعلومات التي تظهر على الشاشة أو تشغيلها من جهازك أثناء التسجيل. وهذا يشمل معلومات مثل الصور والرسائل الصوتية التي كنت تلعب.</string>
+    <string name="screenrecord_dialog_settings">الإعدادات</string>
+    <string name="screenrecord_dialog_start">بدء التسجيل</string>
+    <string name="screenrecord_dialog_cancel">إلغاء</string>
+    <string name="screenrecord_audio_title">تسجيل الصوت</string>
+    <string name="screenrecord_audio_summary">تسجيل الصوت أثناء التسجيل</string>
+    <string name="screenrecord_taps_title">تظهر الصنابير</string>
+    <string name="screenrecord_taps_summary">تظهر ردود الفعل البصري أثناء التسجيل</string>
+    <string name="screenrecord_stopdot_title">تظهر نقطة توقف</string>
+    <string name="screenrecord_stopdot_summary">تظهر نقطة حمراء لإيقاف التسجيل بنقرة واحدة. Longpress أن تتحرك إلى الجانب الآخر.</string>
+    <string name="screenrecord_low_quality_title">جودة منخفضة</string>
+    <string name="screenrecord_low_quality_summary">سجل في أقل جودة لتوفير مساحة على الجهاز الخاص بك</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">لقطة الشاشة</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_running_services">فتح شاشة الخدمات المشغلة في الخلفية.</string>
     <string name="global_action_restart_advanced">متقدم</string>
     <string name="global_action_restart_recovery">الإسترداد</string>
     <string name="global_action_restart_bootloader">محمل الاقلاع</string>
+    <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">وضع الكافيين</string>
     <string name="accessibility_quick_settings_caffeine_off">كافيين معطل</string>
@@ -34,5 +49,18 @@
     <string name="quick_settings_adb_network">شبكة ADB</string>
     <string name="quick_settings_network_adb_enabled_label">ADB عبر الشبكة</string>
     <string name="quick_settings_network_adb_disabled_label">ADB عبر الشبكة</string>
+    <string name="adb_network_forced_tcp_warn">ADB شبكة القسري تمكين على ميناء: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">وضع غامرة</string>
+    <string name="quick_settings_immersive_tile_off">غامرة قبالة</string>
+    <string name="quick_settings_immersive_tile_statusbar">غامرة شريط الحالة</string>
+    <string name="quick_settings_immersive_tile_navbar">غامرة الناف بار</string>
+    <string name="quick_settings_immersive_tile_full">غامرة كامل</string>
+    <string name="quick_settings_monotoggle_tile">وضع الصوت</string>
+    <string name="quick_settings_monotoggle_tile_mono">أحادية الصوت</string>
+    <string name="quick_settings_monotoggle_tile_stereo">صوت ستيريو</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">الآن</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">حدد التطبيق</string>
 </resources>

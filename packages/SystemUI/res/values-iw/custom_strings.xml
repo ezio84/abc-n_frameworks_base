@@ -18,14 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">להתחיל להקליט עם מסך מקליט?</string>
+    <string name="screenrecord_dialog_summary">מקליט מסך תהיה גישה לכל המידע הגלוי על המסך שלך או שיחק מהמכשיר שלך בזמן הקלטה. זה כולל מידע כגון תמונות, הודעות, ושמע שאתה משחק.</string>
+    <string name="screenrecord_dialog_settings">הגדרות</string>
+    <string name="screenrecord_dialog_start">התחל הקלטה</string>
+    <string name="screenrecord_dialog_cancel">לבטל</string>
+    <string name="screenrecord_audio_title">להקליט אודיו</string>
+    <string name="screenrecord_audio_summary">להקליט אודיו בזמן הקלטה</string>
+    <string name="screenrecord_taps_title">להראות ברזים</string>
+    <string name="screenrecord_taps_summary">הצג משוב חזותי בזמן הקלטה</string>
+    <string name="screenrecord_stopdot_title">תראה תפסיק נקודה</string>
+    <string name="screenrecord_stopdot_summary">להראות נקודה אדומה כדי לעצור את ההקלטה עם ברז אחד. Longpress זה להעביר את זה לצד השני.</string>
+    <string name="screenrecord_low_quality_title">איכות נמוכה</string>
+    <string name="screenrecord_low_quality_summary">להקליט באיכות נמוכה יותר כדי לחסוך מקום במכשיר שלך</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">צילום מסך</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">פתח את מנהל שירותי המסך.</string>
     <string name="global_action_restart_advanced">אפשרויות מתקדמות</string>
     <string name="global_action_restart_recovery">שיקום</string>
+    <string name="global_action_restart_bootloader">מנהל איתחול</string>
+    <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">קפאין</string>
+    <string name="accessibility_quick_settings_caffeine_off">קפאין חופש</string>
+    <string name="accessibility_quick_settings_caffeine_on">קפאין על</string>
     <string name="quick_settings_sound_search">חיפוש לפי שמע</string>
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB רשת</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb מעל הרשת.</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb מעל הרשת.</string>
+    <string name="adb_network_forced_tcp_warn">ADB רשת נאלץ מופעלת יציאה: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Immersive מצב</string>
+    <string name="quick_settings_immersive_tile_off">Immersive חופש</string>
+    <string name="quick_settings_immersive_tile_statusbar">מקיפה שורת המצב</string>
+    <string name="quick_settings_immersive_tile_navbar">Immersive navbar</string>
+    <string name="quick_settings_immersive_tile_full">Immersive מלא</string>
+    <string name="quick_settings_monotoggle_tile">מצב שמע</string>
+    <string name="quick_settings_monotoggle_tile_mono">שמע מונו</string>
+    <string name="quick_settings_monotoggle_tile_stereo">אודיו סטריאו</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">עכשיו</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">בחר אפליקציה</string>
 </resources>

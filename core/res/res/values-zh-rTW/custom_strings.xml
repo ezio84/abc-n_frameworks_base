@@ -31,4 +31,5 @@
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">輕觸即可停用偵錯。</string>
     <!-- Bluetooth service -->
+    <string name="bluetooth_airplane_mode_toast">蓝牙会留在在飞行模式</string>
 </resources>

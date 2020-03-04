@@ -18,10 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">녹화가 시작으로 화면 레코더는?</string>
+    <string name="screenrecord_dialog_summary">화면 레코더에 액세스 할 수 있는 모든 정보의 화면에 표시 또는 재생 장치에서 기록한다. 이 정보를 포함하는 사진 등의 메시지,오디오를 재생합니다.</string>
+    <string name="screenrecord_dialog_settings">설정</string>
+    <string name="screenrecord_dialog_start">녹화가 시작</string>
+    <string name="screenrecord_dialog_cancel">취소</string>
+    <string name="screenrecord_audio_title">오디오 녹음</string>
+    <string name="screenrecord_audio_summary">기록하는 동안 오디오 녹음</string>
+    <string name="screenrecord_taps_title">표시 탭</string>
+    <string name="screenrecord_taps_summary">쇼 시각적 피드백을 기록하는 동안</string>
+    <string name="screenrecord_stopdot_title">표시를 중지 점</string>
+    <string name="screenrecord_stopdot_summary">표시 빨간 점을 막으로 녹음합니다. 등급이 없는 앱로 이동하기 위해 그것을 이루어 지지 않습니다.</string>
+    <string name="screenrecord_low_quality_title">낮은 품질</string>
+    <string name="screenrecord_low_quality_summary">레코드에서 낮은 품질을 저장하는 장치의 공간</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
+    <string name="global_action_screenshot_cust">스크린샷</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">열린 서비스를 실행하는 화면입니다.</string>
     <string name="global_action_restart_advanced">고급 설정</string>
+    <string name="global_action_restart_recovery">복구</string>
+    <string name="global_action_restart_bootloader">부트로더</string>
+    <string name="global_action_restart_ui">롤리팝에 대한-</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">카페인</string>
+    <string name="accessibility_quick_settings_caffeine_off">카페인 off</string>
+    <string name="accessibility_quick_settings_caffeine_on">에서 카페인</string>
+    <string name="quick_settings_sound_search">드 검색</string>
     <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">ADB 네트워크</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb 이상 Net</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb 이상 Net</string>
+    <string name="adb_network_forced_tcp_warn">ADB 네트워크 강제 활성화에 항구: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">드</string>
+    <string name="quick_settings_immersive_tile_off">Immersive off</string>
+    <string name="quick_settings_immersive_tile_statusbar">Immersive 상태 표시</string>
+    <string name="quick_settings_immersive_tile_navbar">Immersive 메뉴 바</string>
+    <string name="quick_settings_immersive_tile_full">몰입 전체</string>
+    <string name="quick_settings_monotoggle_tile">오디오모드</string>
+    <string name="quick_settings_monotoggle_tile_mono">모노 오디오</string>
+    <string name="quick_settings_monotoggle_tile_stereo">입체 음향 오디오</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">지금</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">응용 프로그램을 선택하</string>
 </resources>

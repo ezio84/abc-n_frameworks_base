@@ -18,6 +18,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Inicio de la grabación con la Pantalla de la grabadora?</string>
+    <string name="screenrecord_dialog_summary">El registrador de la pantalla se tiene acceso a toda la información que es visible en su pantalla o reproducir desde tu dispositivo durante la grabación. Esto incluye información como fotos, mensajes, y de audio que usted juega.</string>
+    <string name="screenrecord_dialog_settings">Configuración</string>
+    <string name="screenrecord_dialog_start">Inicio De La Grabación</string>
+    <string name="screenrecord_dialog_cancel">Cancelar</string>
+    <string name="screenrecord_audio_title">Grabación de audio</string>
+    <string name="screenrecord_audio_summary">Grabación de audio durante la grabación</string>
+    <string name="screenrecord_taps_title">Mostrar los grifos</string>
+    <string name="screenrecord_taps_summary">Mostrar información visual durante la grabación</string>
+    <string name="screenrecord_stopdot_title">Mostrar stop dot</string>
+    <string name="screenrecord_stopdot_summary">Mostrar un punto rojo para detener la grabación con un solo toque. Longpress él para moverlo hacia el lado opuesto.</string>
+    <string name="screenrecord_low_quality_title">De baja calidad</string>
+    <string name="screenrecord_low_quality_summary">Grabar en una calidad más baja para ahorrar espacio en su dispositivo</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Captura de pantalla</string>
     <string name="global_action_screenrecord">Pantalla</string>
@@ -37,5 +50,17 @@
     <string name="quick_settings_network_adb_enabled_label">ADB sobre Red</string>
     <string name="quick_settings_network_adb_disabled_label">ADB sobre Red</string>
     <string name="adb_network_forced_tcp_warn">Red ADB forzada en el puerto: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Modo inmersivo</string>
+    <string name="quick_settings_immersive_tile_off">Immersive off</string>
+    <string name="quick_settings_immersive_tile_statusbar">Immersive barra de estado</string>
+    <string name="quick_settings_immersive_tile_navbar">Immersive navbar</string>
+    <string name="quick_settings_immersive_tile_full">De inmersión completa</string>
+    <string name="quick_settings_monotoggle_tile">Modo de Audio</string>
+    <string name="quick_settings_monotoggle_tile_mono">Audio Mono</string>
+    <string name="quick_settings_monotoggle_tile_stereo">De audio estéreo</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Ahora</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Seleccione una aplicación</string>
 </resources>

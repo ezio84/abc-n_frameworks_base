@@ -18,11 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Começar a gravar com o gravador de Tela?</string>
+    <string name="screenrecord_dialog_summary">Gravador de tela terá acesso a todas as informações visíveis na tela ou jogado a partir do seu dispositivo durante a gravação. Isso inclui informações como fotos, mensagens e de áudio que você jogar.</string>
+    <string name="screenrecord_dialog_settings">Definições</string>
+    <string name="screenrecord_dialog_start">Iniciar A Gravação</string>
+    <string name="screenrecord_dialog_cancel">Cancelar</string>
+    <string name="screenrecord_audio_title">Gravar áudio</string>
+    <string name="screenrecord_audio_summary">Gravar áudio durante a gravação</string>
+    <string name="screenrecord_taps_title">Mostrar torneiras</string>
+    <string name="screenrecord_taps_summary">Mostrar um feedback visual durante a gravação</string>
+    <string name="screenrecord_stopdot_title">Mostrar parar de ponto</string>
+    <string name="screenrecord_stopdot_summary">Mostrar um ponto vermelho para parar a gravação com um único toque. Longpress para movê-lo para o lado oposto.</string>
+    <string name="screenrecord_low_quality_title">Baixa qualidade</string>
+    <string name="screenrecord_low_quality_summary">Registro em uma qualidade mais baixa para economizar espaço no seu dispositivo</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Captura de tela</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Execução de Serviços de ecrã.</string>
     <string name="global_action_restart_advanced">Avançado</string>
+    <string name="global_action_restart_recovery">Recuperação</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">A cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">A cafeína off</string>
+    <string name="accessibility_quick_settings_caffeine_on">A cafeína em</string>
+    <string name="quick_settings_sound_search">Pesquisa de som</string>
     <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">ADB rede</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb através de rede</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb através de rede</string>
+    <string name="adb_network_forced_tcp_warn">ADB rede forçado habilitado na porta: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Immersive modo</string>
+    <string name="quick_settings_immersive_tile_off">Immersive off</string>
+    <string name="quick_settings_immersive_tile_statusbar">Immersive statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Immersive navbar</string>
+    <string name="quick_settings_immersive_tile_full">Immersive completo</string>
+    <string name="quick_settings_monotoggle_tile">Modo de áudio</string>
+    <string name="quick_settings_monotoggle_tile_mono">Áudio Mono</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Áudio estéreo</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Agora</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Selecione um aplicativo</string>
 </resources>

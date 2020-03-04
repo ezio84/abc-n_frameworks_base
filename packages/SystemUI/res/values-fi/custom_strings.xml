@@ -18,13 +18,22 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Aloita tallennus Screen recorder?</string>
+    <string name="screenrecord_dialog_summary">Screen recorder on pääsy kaikki tiedot, jotka näkyvät näytön tai toistaa, laitteesta, kun nauhoitus. Tämä sisältää tietoja, kuten valokuvia, viestien, ja ääni, että voit pelata.</string>
     <string name="screenrecord_dialog_settings">Asetukset</string>
     <string name="screenrecord_dialog_start">Aloita tallennus</string>
     <string name="screenrecord_dialog_cancel">Peruuta</string>
     <string name="screenrecord_audio_title">Nauhoita ääntä</string>
+    <string name="screenrecord_audio_summary">Tallentaa ääntä tallennuksen aikana</string>
     <string name="screenrecord_taps_title">Näytä kosketus</string>
+    <string name="screenrecord_taps_summary">Näytä visuaalista palautetta, kun tallennus</string>
+    <string name="screenrecord_stopdot_title">Näytä lopettaa piste</string>
+    <string name="screenrecord_stopdot_summary">Näytä punainen piste lopeta tallennus yhdellä kosketuksella. Longpress ja siirrä se vastakkaiselle puolelle.</string>
+    <string name="screenrecord_low_quality_title">Alhainen laatu</string>
+    <string name="screenrecord_low_quality_summary">Ennätys huonompilaatuista, jotta säästää tilaa laitteen</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Ruutukaappaus</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_running_services">Avaa \"Käynnissä olevat palvelut\"-näyttö.</string>
     <string name="global_action_restart_advanced">Lisäasetukset</string>
@@ -32,12 +41,26 @@
     <string name="global_action_restart_bootloader">Bootloader-tila</string>
     <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Kofeiini</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kofeiini pois</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kofeiinia</string>
     <string name="quick_settings_sound_search">Äänihaku</string>
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB verkko</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb yli Net</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb yli Net</string>
+    <string name="adb_network_forced_tcp_warn">ADB verkon pakko käytössä portti: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Mukaansatempaava tilassa</string>
     <string name="quick_settings_immersive_tile_off">Immersive pois käytöstä</string>
+    <string name="quick_settings_immersive_tile_statusbar">Mukaansatempaava statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Mukaansatempaava navbar</string>
+    <string name="quick_settings_immersive_tile_full">Mukaansatempaava koko</string>
+    <string name="quick_settings_monotoggle_tile">Audio-tila</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono audio</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo audio</string>
     <!-- Smartspace -->
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">Nyt</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
+    <string name="app_picker_dialog_title">Valitse sovellus</string>
 </resources>

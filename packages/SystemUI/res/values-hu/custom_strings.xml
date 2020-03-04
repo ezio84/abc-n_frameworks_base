@@ -18,10 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Indítsa el a felvételt a hangrögzítő Képernyőn?</string>
+    <string name="screenrecord_dialog_summary">Screen recorder hozzáférhet minden olyan információ, ami látható a képernyőn, vagy játszott a készülék, a felvétel közben. Ez magában foglalja adatokat, például fotókat, üzeneteket, valamint a hang, amit játszani.</string>
+    <string name="screenrecord_dialog_settings">Beállítások</string>
+    <string name="screenrecord_dialog_start">A Felvétel Indítása</string>
+    <string name="screenrecord_dialog_cancel">Mégse</string>
+    <string name="screenrecord_audio_title">Hangfelvétel</string>
+    <string name="screenrecord_audio_summary">Hangfelvétel rögzítés közben</string>
+    <string name="screenrecord_taps_title">Mutasd meg csapok</string>
+    <string name="screenrecord_taps_summary">Térkép vizuális visszajelzést felvétel közben</string>
+    <string name="screenrecord_stopdot_title">Mutasd meg ne pont</string>
+    <string name="screenrecord_stopdot_summary">Mutass egy piros pont, hogy a felvétel egyetlen érintéssel. A rendszeresen frissített, hogy helyezze át a másik oldalra.</string>
+    <string name="screenrecord_low_quality_title">Alacsony minőségű</string>
+    <string name="screenrecord_low_quality_summary">Rekord egy gyengébb minőségű helytakarékosság a készülék</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
+    <string name="global_action_screenshot_cust">Screenshot</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Nyitva Futó Szolgáltatások képernyőn.</string>
     <string name="global_action_restart_advanced">Speciális</string>
+    <string name="global_action_restart_recovery">Fellendülés</string>
+    <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">A koffein</string>
+    <string name="accessibility_quick_settings_caffeine_off">A koffein le</string>
+    <string name="accessibility_quick_settings_caffeine_on">A koffein a</string>
+    <string name="quick_settings_sound_search">Hang keresés</string>
     <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">ADB hálózat</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb több mint Nettó</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb több mint Nettó</string>
+    <string name="adb_network_forced_tcp_warn">ADB hálózati kénytelen engedélyezve port: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Magával ragadó mód</string>
+    <string name="quick_settings_immersive_tile_off">Magával ragadó le</string>
+    <string name="quick_settings_immersive_tile_statusbar">Magával ragadó statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Magával ragadó navbar</string>
+    <string name="quick_settings_immersive_tile_full">Magával ragadó teljes</string>
+    <string name="quick_settings_monotoggle_tile">Audió mód</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono audio</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Sztereó hang</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Most</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Jelölje ki a kívánt alkalmazás</string>
 </resources>

@@ -18,13 +18,28 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Start optagelsen med Screen recorder?</string>
+    <string name="screenrecord_dialog_summary">Skærmen optageren, vil have adgang til alle de oplysninger, der vises på din skærm eller spillet fra din enhed, mens du optager. Dette omfatter oplysninger såsom fotos, meddelelser og lyd, som du spiller.</string>
+    <string name="screenrecord_dialog_settings">Indstillinger</string>
+    <string name="screenrecord_dialog_start">Start Optagelse</string>
+    <string name="screenrecord_dialog_cancel">Annuller</string>
+    <string name="screenrecord_audio_title">Optage lyd</string>
+    <string name="screenrecord_audio_summary">Optage lyd, mens du optager</string>
+    <string name="screenrecord_taps_title">Vis vandhaner</string>
+    <string name="screenrecord_taps_summary">Vis visuel feedback, mens du optager</string>
+    <string name="screenrecord_stopdot_title">Vis stop dot</string>
+    <string name="screenrecord_stopdot_summary">Viser en rød prik for at stoppe en optagelse med et enkelt tryk. Longpress det at flytte den til den modsatte side.</string>
+    <string name="screenrecord_low_quality_title">Lav kvalitet</string>
+    <string name="screenrecord_low_quality_summary">Registrering i en lavere kvalitet for at spare plads på din enhed</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Skærmfoto</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_running_services">Åben skærmen Kørerende tjenester.</string>
     <string name="global_action_restart_advanced">Avanceret</string>
     <string name="global_action_restart_recovery">Recovery</string>
     <string name="global_action_restart_bootloader">Bootloader</string>
+    <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Caffeine</string>
     <string name="accessibility_quick_settings_caffeine_off">Caffeine slået fra</string>
@@ -32,5 +47,20 @@
     <string name="quick_settings_sound_search">Søg efter lyd</string>
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB netværk</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb over Nettet</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb over Nettet</string>
+    <string name="adb_network_forced_tcp_warn">ADB-netværk tvunget aktiveret på port: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Immersive tilstand</string>
+    <string name="quick_settings_immersive_tile_off">Medrivende off</string>
+    <string name="quick_settings_immersive_tile_statusbar">Medrivende statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Medrivende navbar</string>
+    <string name="quick_settings_immersive_tile_full">Medrivende fuld</string>
+    <string name="quick_settings_monotoggle_tile">Audio mode</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono lyd</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo audio</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Nu</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Vælg en app</string>
 </resources>

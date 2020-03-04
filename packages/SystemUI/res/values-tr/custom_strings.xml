@@ -18,6 +18,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Ekran kaydedici ile kayıt başlar.</string>
+    <string name="screenrecord_dialog_summary">Ekran kaydedici kayıt sırasında cihazınızdan oynanan ekranda görünen veya olan tüm bilgilere erişebilir. Bu oyun size otomatik olarak yeni bir bilgi, mesaj ve ses içerir.</string>
+    <string name="screenrecord_dialog_settings">Ayarları</string>
+    <string name="screenrecord_dialog_start">Kayda Başla</string>
+    <string name="screenrecord_dialog_cancel">İptal</string>
+    <string name="screenrecord_audio_title">Ses kaydı</string>
+    <string name="screenrecord_audio_summary">Kayıt yaparken ses kaydı</string>
+    <string name="screenrecord_taps_title">Show musluk</string>
+    <string name="screenrecord_taps_summary">Kayıt sırasında görsel geri bildirim göster</string>
+    <string name="screenrecord_stopdot_title">Haritayı dur nokta</string>
+    <string name="screenrecord_stopdot_summary">Tek bir dokunuşla kaydı durdurmak için kırmızı bir nokta göster. Karşı tarafa taşımak için Longpress.</string>
+    <string name="screenrecord_low_quality_title">Düşük kalite</string>
+    <string name="screenrecord_low_quality_summary">Düşük kalitede kayıt cihazınızda yer kazanmak için</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
     <string name="global_action_screenshot_cust">Ekran görüntüsü</string>
     <string name="global_action_screenrecord">Ekran kaydı</string>
@@ -26,6 +39,7 @@
     <string name="global_action_restart_advanced">Gelişmiş</string>
     <string name="global_action_restart_recovery">Kurtarma</string>
     <string name="global_action_restart_bootloader">Önyükleyici</string>
+    <string name="global_action_restart_ui">SystemUİ</string>
     <!-- Caffeine QS Tile -->
     <string name="quick_settings_caffeine_label">Kafein</string>
     <string name="accessibility_quick_settings_caffeine_off">Kafein kapalı</string>
@@ -36,5 +50,17 @@
     <string name="quick_settings_network_adb_enabled_label">Ağ üzerinden Adb</string>
     <string name="quick_settings_network_adb_disabled_label">Ağ üzerinden Adb</string>
     <string name="adb_network_forced_tcp_warn"><xliff:g id="port">%1$s</xliff:g> portunda ADB ağı zorunlu olarak etkinleştirildi</string>
+    <string name="quick_settings_immersive_tile">Sürükleyici modu</string>
+    <string name="quick_settings_immersive_tile_off">Üstün kapalı</string>
+    <string name="quick_settings_immersive_tile_statusbar">Sürükleyici statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Sürükleyici bir gezinti çubuğu</string>
+    <string name="quick_settings_immersive_tile_full">Sürükleyici tam</string>
+    <string name="quick_settings_monotoggle_tile">Ses modu</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono ses</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo ses</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Şimdi</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Bir uygulamayı seçin</string>
 </resources>

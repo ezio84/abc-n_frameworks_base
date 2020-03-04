@@ -18,11 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Почети снимање са диктафон екран?</string>
+    <string name="screenrecord_dialog_summary">Сцреен рецордер ће имати приступ свим информацијама, која се приказује на екрану или се игра са уређаја током снимања. Ово укључује информације као што су фотографије, поруке, и звук који играте.</string>
+    <string name="screenrecord_dialog_settings">Опције</string>
+    <string name="screenrecord_dialog_start">Почети Снимање</string>
     <string name="screenrecord_dialog_cancel">Откажи</string>
+    <string name="screenrecord_audio_title">Снимање аудио</string>
+    <string name="screenrecord_audio_summary">Снимање звука током снимања</string>
+    <string name="screenrecord_taps_title">Показати метчики</string>
+    <string name="screenrecord_taps_summary">Показати визуелну повратну информацију током снимања</string>
+    <string name="screenrecord_stopdot_title">Покаже стоп-то-поинт</string>
+    <string name="screenrecord_stopdot_summary">Показују црвену тачку да бисте зауставили снимање са једним чесме. Дугим притиском да га преместите га на супротну страну.</string>
+    <string name="screenrecord_low_quality_title">Низак квалитет</string>
+    <string name="screenrecord_low_quality_summary">Снимање у нижем квалитету за уштеде простора на вашем уређају</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
+    <string name="global_action_screenshot_cust">С</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Отворене услуге екрана.</string>
     <string name="global_action_restart_advanced">Напредна подешавања</string>
+    <string name="global_action_restart_recovery">Опоравак</string>
+    <string name="global_action_restart_bootloader">Бутлоадера</string>
+    <string name="global_action_restart_ui">Системуи не</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Кофеин</string>
+    <string name="accessibility_quick_settings_caffeine_off">Кофеин из</string>
+    <string name="accessibility_quick_settings_caffeine_on">Кофеин на</string>
+    <string name="quick_settings_sound_search">Звук претрагу</string>
     <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">Мрежа АДБ</string>
+    <string name="quick_settings_network_adb_enabled_label">АДБ преко мреже</string>
+    <string name="quick_settings_network_adb_disabled_label">АДБ преко мреже</string>
+    <string name="adb_network_forced_tcp_warn">Мрежа АДБ учинили укључен на порту: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Иммерсивный режим</string>
+    <string name="quick_settings_immersive_tile_off">Роњење од</string>
+    <string name="quick_settings_immersive_tile_statusbar">Зависност стања</string>
+    <string name="quick_settings_immersive_tile_navbar">Зависност навигацију</string>
+    <string name="quick_settings_immersive_tile_full">Ефекат присуства пун</string>
+    <string name="quick_settings_monotoggle_tile">Аудио режим</string>
+    <string name="quick_settings_monotoggle_tile_mono">Моно аудио</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Стерео аудио</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Сада</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Изаберите апликацију</string>
 </resources>

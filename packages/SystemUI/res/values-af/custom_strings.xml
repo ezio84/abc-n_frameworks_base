@@ -18,13 +18,49 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
+    <string name="screenrecord_dialog_title">Begin met die opname met die Skerm blokfluit?</string>
+    <string name="screenrecord_dialog_summary">Screen recorder sal toegang hê tot al die inligting wat sigbaar is op die skerm of gespeel van jou toestel, terwyl die opname. Dit sluit inligting soos foto\'s, boodskappe, en die klank wat jy speel.</string>
+    <string name="screenrecord_dialog_settings">Instellings</string>
+    <string name="screenrecord_dialog_start">Begin Met Die Opname</string>
+    <string name="screenrecord_dialog_cancel">Kanselleer</string>
+    <string name="screenrecord_audio_title">Rekord klank</string>
+    <string name="screenrecord_audio_summary">Rekord klank, terwyl die opname</string>
+    <string name="screenrecord_taps_title">Wys krane</string>
+    <string name="screenrecord_taps_summary">Wys visuele terugvoer, terwyl die opname</string>
+    <string name="screenrecord_stopdot_title">Wys stop dot</string>
+    <string name="screenrecord_stopdot_summary">Wys\'n rooi dot te stop opname met\'n enkele kraan. Longpress dit om dit te skuif na die teenoorgestelde kant.</string>
+    <string name="screenrecord_low_quality_title">Lae gehalte</string>
+    <string name="screenrecord_low_quality_summary">Rekord in\'n laer gehalte ruimte te bespaar op jou toestel</string>
     <!-- Power menu item for taking a screenshot [CHAR LIMIT=20]-->
+    <string name="global_action_screenshot_cust">Kiekie</string>
+    <string name="global_action_screenrecord">Screenrec</string>
     <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Oop Loop Dienste skerm.</string>
     <string name="global_action_restart_advanced">Gevorderd</string>
     <string name="global_action_restart_recovery">Recovery</string>
     <string name="global_action_restart_bootloader">Bootloader</string>
     <string name="global_action_restart_ui">SystemUI</string>
     <!-- Caffeine QS Tile -->
+    <string name="quick_settings_caffeine_label">Kafeïen</string>
+    <string name="accessibility_quick_settings_caffeine_off">Kafeïen af</string>
+    <string name="accessibility_quick_settings_caffeine_on">Kafeïen op</string>
+    <string name="quick_settings_sound_search">Klank soek</string>
     <!-- ADB network tile -->
+    <string name="quick_settings_adb_network">ADB netwerk</string>
+    <string name="quick_settings_network_adb_enabled_label">Adb oor Netto</string>
+    <string name="quick_settings_network_adb_disabled_label">Adb oor Netto</string>
+    <string name="adb_network_forced_tcp_warn">ADB netwerk gedwing om in staat gestel om op port: <xliff:g id="port">%1$s</xliff:g></string>
+    <string name="quick_settings_immersive_tile">Meeslepende af</string>
+    <string name="quick_settings_immersive_tile_off">Meeslepende af</string>
+    <string name="quick_settings_immersive_tile_statusbar">Meeslepende statusbar</string>
+    <string name="quick_settings_immersive_tile_navbar">Meeslepende navbar</string>
+    <string name="quick_settings_immersive_tile_full">Volle meeslepende</string>
+    <string name="quick_settings_monotoggle_tile">Klank af</string>
+    <string name="quick_settings_monotoggle_tile_mono">Mono klank</string>
+    <string name="quick_settings_monotoggle_tile_stereo">Stereo klank</string>
     <!-- Smartspace -->
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+    <string name="smartspace_now">Nou</string>
+    <string name="smartspace_pill_text_format">%1$s:%2$s</string>
+    <string name="app_picker_dialog_title">Kies\'n app</string>
 </resources>

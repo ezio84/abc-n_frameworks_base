@@ -18,9 +18,9 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="reboot_to_recovery_title">Recovery-tila</string>
+    <string name="reboot_to_recovery_title">Recovery</string>
     <string name="reboot_to_recovery_message">Käynnistetään uudelleen recovery-tilaan</string>
-    <string name="reboot_to_bootloader_title">Bootloader-tila</string>
+    <string name="reboot_to_bootloader_title">Bootloader</string>
     <string name="reboot_to_bootloader_message">Käynnistetään bootloader-tilaan</string>
     <string name="reboot_title">Käynnistä uudelleen</string>
     <string name="reboot_message">Uudelleenkäynnistä järjestelmä</string>
@@ -31,4 +31,5 @@
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">Paina poistaaksesi vianetsinnän käytöstä.</string>
     <!-- Bluetooth service -->
+    <string name="bluetooth_airplane_mode_toast">Bluetooth pysyy aikana lentokone tilassa</string>
 </resources>
