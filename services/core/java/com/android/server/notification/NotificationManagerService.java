@@ -4228,7 +4228,6 @@ public class NotificationManagerService extends SystemService {
                     .exec(this, in, out, err, args, callback, resultReceiver);
         }
 
-<<<<<<< HEAD
         @Override
         public void forceShowLedLight(int color) {
             forceShowLed(color);
@@ -4237,7 +4236,8 @@ public class NotificationManagerService extends SystemService {
         @Override
         public void forcePulseLedLight(int color, int onTime, int offTime) {
             forcePulseLed(color, onTime, offTime);
-=======
+        }
+
         /**
          * Get stats committed after startNs
          *
@@ -4279,7 +4279,6 @@ public class NotificationManagerService extends SystemService {
             }
             Slog.e(TAG, "exiting pullStats: bad request");
             return 0;
->>>>>>> android-10.0.0_r31
         }
     };
 
