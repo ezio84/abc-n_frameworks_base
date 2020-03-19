@@ -75,4 +75,7 @@
 
     <string name="recents_app_killed">App killed</string>
     <string name="nope_cant_kill">Launcher cannot be killed</string>
+
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Screenshot deleted</string>
 </resources>

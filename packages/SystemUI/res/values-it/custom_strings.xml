@@ -34,4 +34,6 @@
 
     <string name="recents_app_killed">App terminata</string>
     <string name="nope_cant_kill">Il Launcher non può essere terminato</string>
+
+    <string name="delete_screenshot_toast">Screenshot eliminato</string>
 </resources>
