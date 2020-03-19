@@ -18,14 +18,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
-    <string name="screenrecord_dialog_title">Démarrer l’enregistrement avec l’enregistreur d’écran ?</string>
+    <string name="screenrecord_dialog_title">Démarrer l’enregistrement?</string>
     <string name="screenrecord_dialog_summary">L\'enregistreur d\'écran aura accès à toutes les informations visibles sur votre écran ou jouées depuis votre appareil pendant l\'enregistrement. Cela inclut des informations telles que des photos, des messages et de l\'audio que vous écoutez.</string>
-    <string name="screenrecord_dialog_settings">Réglages</string>
-    <string name="screenrecord_dialog_start">Démarrer l\'enregistrement</string>
+    <string name="screenrecord_dialog_start">Démarrer</string>
     <string name="screenrecord_dialog_cancel">Abandonner</string>
     <string name="screenrecord_audio_title">Enregistrer l\'audio</string>
     <string name="screenrecord_audio_summary">Enregistrer l\'audio pendant l\'enregistrement</string>
-    <string name="screenrecord_taps_title">Afficher les rotations</string>
+    <string name="screenrecord_taps_title">Afficher les taps</string>
     <string name="screenrecord_taps_summary">Afficher les commentaires visuels lors de l\'enregistrement</string>
     <string name="screenrecord_stopdot_title">Afficher le point d\'arrêt</string>
     <string name="screenrecord_stopdot_summary">Afficher un point rouge pour arrêter l\'enregistrement d\'un simple appui. Appuyez longuement pour le déplacer vers le côté opposé.</string>

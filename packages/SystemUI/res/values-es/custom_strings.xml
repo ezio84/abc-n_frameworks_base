@@ -18,10 +18,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Screen record -->
-    <string name="screenrecord_dialog_title">Inicio de la grabación con la Pantalla de la grabadora?</string>
+    <string name="screenrecord_dialog_title">Inicio de la grabación?</string>
     <string name="screenrecord_dialog_summary">El registrador de la pantalla se tiene acceso a toda la información que es visible en su pantalla o reproducir desde tu dispositivo durante la grabación. Esto incluye información como fotos, mensajes, y de audio que usted juega.</string>
-    <string name="screenrecord_dialog_settings">Configuración</string>
-    <string name="screenrecord_dialog_start">Inicio De La Grabación</string>
+    <string name="screenrecord_dialog_start">Inicio</string>
     <string name="screenrecord_dialog_cancel">Cancelar</string>
     <string name="screenrecord_audio_title">Grabación de audio</string>
     <string name="screenrecord_audio_summary">Grabación de audio durante la grabación</string>
