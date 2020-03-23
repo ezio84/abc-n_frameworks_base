@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Start optagelsen med Screen recorder?</string>
     <string name="screenrecord_dialog_summary">Skærmen optageren, vil have adgang til alle de oplysninger, der vises på din skærm eller spillet fra din enhed, mens du optager. Dette omfatter oplysninger såsom fotos, meddelelser og lyd, som du spiller.</string>
-    <string name="screenrecord_dialog_settings">Indstillinger</string>
     <string name="screenrecord_dialog_start">Start Optagelse</string>
     <string name="screenrecord_dialog_cancel">Annuller</string>
     <string name="screenrecord_audio_title">Optage lyd</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Nu</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Vælg en app</string>
+    <string name="recents_app_killed">App dræbt</string>
+    <string name="nope_cant_kill">Launcher kan ikke blive dræbt</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Screenshot slettet</string>
 </resources>

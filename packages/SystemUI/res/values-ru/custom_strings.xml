@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Начать запись экрана?</string>
     <string name="screenrecord_dialog_summary">Запись с экрана будет иметь доступ ко всей информации, которая отображается на экране или воспроизводится с Вашего устройства во время записи. Это включает в себя такую информацию, как фотографии, сообщения и воспроизводимое аудио.</string>
-    <string name="screenrecord_dialog_settings">Настройки</string>
     <string name="screenrecord_dialog_start">Начать запись</string>
     <string name="screenrecord_dialog_cancel">Отмена</string>
     <string name="screenrecord_audio_title">Запись аудио</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Сейчас</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">Выберите приложение</string>
+    <string name="recents_app_killed">Приложение убила</string>
+    <string name="nope_cant_kill">Launcher не может быть убит</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Скриншот удален</string>
 </resources>

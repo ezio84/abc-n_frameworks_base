@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">画面録画を開始しますか?</string>
     <string name="screenrecord_dialog_summary">画面録画は、画面に表示される情報や記録中に端末から再生される全ての情報にアクセスできます。これには写真、メッセージ、再生する音声などの情報が含まれます。</string>
-    <string name="screenrecord_dialog_settings">設定</string>
     <string name="screenrecord_dialog_start">録画開始</string>
     <string name="screenrecord_dialog_cancel">中止</string>
     <string name="screenrecord_audio_title">音声録音</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">現在</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">アプリを選択</string>
+    <string name="recents_app_killed">アプリ殺され</string>
+    <string name="nope_cant_kill">ランチャーできない死亡</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">スクリーンショット削除</string>
 </resources>

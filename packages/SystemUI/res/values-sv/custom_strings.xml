@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Starta inspelning med skärminspelare?</string>
     <string name="screenrecord_dialog_summary">Skärminspelare kommer att ha tillgång till all information som syns på skärmen eller spelas upp från din enhet under inspelningen. Detta inkluderar information som foton, meddelanden och ljud som du spelar.</string>
-    <string name="screenrecord_dialog_settings">Inställningar</string>
     <string name="screenrecord_dialog_start">Starta inspelning</string>
     <string name="screenrecord_dialog_cancel">Avbryt</string>
     <string name="screenrecord_audio_title">Spela in ljud</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Nu</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Välj en app</string>
+    <string name="recents_app_killed">App dödade</string>
+    <string name="nope_cant_kill">Launcher inte kan bli dödade</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Skärmdump bort</string>
 </resources>

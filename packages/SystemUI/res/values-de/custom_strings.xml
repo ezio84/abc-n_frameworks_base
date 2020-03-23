@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Bildschirmaufnahme starten?</string>
     <string name="screenrecord_dialog_summary">Der Bildschirm-Rekorder hat während der Aufnahme Zugriff auf alles Sichtbare auf Ihrem Bildschirm. Dies schließt Fotos, Nachrichten und Tonaufnahmen ein.</string>
-    <string name="screenrecord_dialog_settings">Einstellungen</string>
     <string name="screenrecord_dialog_start">Aufnahme starten</string>
     <string name="screenrecord_dialog_cancel">Abbrechen</string>
     <string name="screenrecord_audio_title">Audio aufnehmen</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Jetzt</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">App auswählen</string>
+    <string name="recents_app_killed">App beendet</string>
+    <string name="nope_cant_kill">Launcher kann nicht beendet werden</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Screenshot gelöscht</string>
 </resources>

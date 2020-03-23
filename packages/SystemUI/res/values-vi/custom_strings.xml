@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Bắt đầu ghi âm với Màn hình máy ghi âm?</string>
     <string name="screenrecord_dialog_summary">Màn hình máy ghi âm sẽ có thể truy cập để tất cả các thông tin, đó là hiển thị trên màn hình của bạn hoặc chơi từ điện thoại, trong khi ghi âm. Này, bao gồm các thông tin như hình ảnh và âm thanh mà bạn chơi.</string>
-    <string name="screenrecord_dialog_settings">Cài đặt</string>
     <string name="screenrecord_dialog_start">Bắt Đầu Ghi Âm</string>
     <string name="screenrecord_dialog_cancel">Hủy</string>
     <string name="screenrecord_audio_title">Ghi âm</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Bây giờ</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Chọn một ứng dụng</string>
+    <string name="recents_app_killed">Ứng dụng bị giết</string>
+    <string name="nope_cant_kill">Phóng không thể bị giết</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Màn hình bị xóa</string>
 </resources>

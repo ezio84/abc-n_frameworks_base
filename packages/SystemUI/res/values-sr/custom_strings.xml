@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Почети снимање са диктафон екран?</string>
     <string name="screenrecord_dialog_summary">Сцреен рецордер ће имати приступ свим информацијама, која се приказује на екрану или се игра са уређаја током снимања. Ово укључује информације као што су фотографије, поруке, и звук који играте.</string>
-    <string name="screenrecord_dialog_settings">Опције</string>
     <string name="screenrecord_dialog_start">Почети Снимање</string>
     <string name="screenrecord_dialog_cancel">Откажи</string>
     <string name="screenrecord_audio_title">Снимање аудио</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Сада</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Изаберите апликацију</string>
+    <string name="recents_app_killed">Апликација је убила</string>
+    <string name="nope_cant_kill">Лаунцхер не може бити убијен</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">С уклоњен</string>
 </resources>

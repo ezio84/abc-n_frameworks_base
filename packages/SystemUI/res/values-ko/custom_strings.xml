@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">녹화가 시작으로 화면 레코더는?</string>
     <string name="screenrecord_dialog_summary">화면 레코더에 액세스 할 수 있는 모든 정보의 화면에 표시 또는 재생 장치에서 기록한다. 이 정보를 포함하는 사진 등의 메시지,오디오를 재생합니다.</string>
-    <string name="screenrecord_dialog_settings">설정</string>
     <string name="screenrecord_dialog_start">녹화가 시작</string>
     <string name="screenrecord_dialog_cancel">취소</string>
     <string name="screenrecord_audio_title">오디오 녹음</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">지금</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">응용 프로그램을 선택하</string>
+    <string name="recents_app_killed">용 사망</string>
+    <string name="nope_cant_kill">실행기는 죽을 수 없습니다</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">스크린샷 삭제</string>
 </resources>

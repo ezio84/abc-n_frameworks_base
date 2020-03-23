@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">开始记录与屏幕上的记录？</string>
     <string name="screenrecord_dialog_summary">屏幕的录像机会有权访问所有的信息可见的屏幕上或从设备，同时记录。 这种信息包括诸如照片、信息和音频播放。</string>
-    <string name="screenrecord_dialog_settings">設定</string>
     <string name="screenrecord_dialog_start">開始錄製</string>
     <string name="screenrecord_dialog_cancel">取消</string>
     <string name="screenrecord_audio_title">錄音</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">現在</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">选择一个应用程序</string>
+    <string name="recents_app_killed">应用程序的杀害</string>
+    <string name="nope_cant_kill">启动不能被杀死</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">截图删除的</string>
 </resources>

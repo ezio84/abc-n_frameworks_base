@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">بدء التسجيل مع مسجل الشاشة?</string>
     <string name="screenrecord_dialog_summary">مسجل الشاشة سيكون لديك الوصول إلى جميع المعلومات التي تظهر على الشاشة أو تشغيلها من جهازك أثناء التسجيل. وهذا يشمل معلومات مثل الصور والرسائل الصوتية التي كنت تلعب.</string>
-    <string name="screenrecord_dialog_settings">الإعدادات</string>
     <string name="screenrecord_dialog_start">بدء التسجيل</string>
     <string name="screenrecord_dialog_cancel">إلغاء</string>
     <string name="screenrecord_audio_title">تسجيل الصوت</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">الآن</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">حدد التطبيق</string>
+    <string name="recents_app_killed">التطبيق قتل</string>
+    <string name="nope_cant_kill">قاذفة لا يمكن قتل</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">الصورة المحذوفة</string>
 </resources>

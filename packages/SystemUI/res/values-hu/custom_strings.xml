@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Indítsa el a felvételt a hangrögzítő Képernyőn?</string>
     <string name="screenrecord_dialog_summary">Screen recorder hozzáférhet minden olyan információ, ami látható a képernyőn, vagy játszott a készülék, a felvétel közben. Ez magában foglalja adatokat, például fotókat, üzeneteket, valamint a hang, amit játszani.</string>
-    <string name="screenrecord_dialog_settings">Beállítások</string>
     <string name="screenrecord_dialog_start">A Felvétel Indítása</string>
     <string name="screenrecord_dialog_cancel">Mégse</string>
     <string name="screenrecord_audio_title">Hangfelvétel</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Most</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Jelölje ki a kívánt alkalmazás</string>
+    <string name="recents_app_killed">Alkalmazás ölte meg</string>
+    <string name="nope_cant_kill">Launcher nem lehet megölni</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Pillanatkép törölt</string>
 </resources>

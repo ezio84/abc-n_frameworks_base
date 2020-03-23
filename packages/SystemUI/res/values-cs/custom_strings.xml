@@ -20,7 +20,6 @@
     <!-- Screen record -->
     <string name="screenrecord_dialog_title">Spustit nahrávání pomocí Záznamníku obrazovky?</string>
     <string name="screenrecord_dialog_summary">Záznamník obrazovky bude mít během nahrávání přístup ke všem informacím, které jsou viditelné na obrazovce nebo přehrávané na vašem zařízení. To zahrnuje informace jako jsou fotografie, zprávy a zvuk, který přehráváte.</string>
-    <string name="screenrecord_dialog_settings">Nastavení</string>
     <string name="screenrecord_dialog_start">Spustit nahrávání</string>
     <string name="screenrecord_dialog_cancel">Zrušit</string>
     <string name="screenrecord_audio_title">Pořídit zvukový záznam</string>
@@ -63,4 +62,8 @@
     <string name="smartspace_now">Nyní</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">Vybrat aplikaci</string>
+    <string name="recents_app_killed">Aplikace ukončena</string>
+    <string name="nope_cant_kill">Spouštěč nelze ukončit</string>
+    <!-- Screenshot toast -->
+    <string name="delete_screenshot_toast">Snímek obrazovky byl smazán</string>
 </resources>
