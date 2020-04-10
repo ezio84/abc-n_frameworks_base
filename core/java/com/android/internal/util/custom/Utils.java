@@ -22,6 +22,8 @@ import android.Manifest;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.om.IOverlayManager;
+import android.content.om.OverlayInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -36,7 +38,9 @@ import android.os.ServiceManager;
 import android.os.SystemProperties;
 import android.os.SystemClock;
 import android.os.Vibrator;
+import android.os.UserHandle;
 import android.provider.MediaStore;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.IWindowManager;
@@ -45,12 +49,16 @@ import android.view.WindowManagerGlobal;
 import com.android.internal.R;
 import com.android.internal.statusbar.IStatusBarService;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 import static android.content.Context.VIBRATOR_SERVICE;
 
 public class Utils {
+
+    private static OverlayManager sOverlayService;
 
     public static final String INTENT_SCREENSHOT = "action_take_screenshot";
     public static final String INTENT_REGION_SCREENSHOT = "action_take_region_screenshot";
@@ -343,5 +351,55 @@ public class Utils {
         Intent intent = new Intent(Intent.ACTION_SEARCH_LONG_PRESS);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
+    }
+
+
+    public static boolean shouldShowGestureNav(Context context) {
+        boolean setNavbarHeight = Settings.System.getIntForUser(context.getContentResolver(),
+            Settings.System.GESTURE_NAVBAR_SHOW, 1, UserHandle.USER_CURRENT) != 0;
+        boolean twoThreeButtonEnabled = Utils.isThemeEnabled("com.android.internal.systemui.navbar.twobutton") ||
+                Utils.isThemeEnabled("com.android.internal.systemui.navbar.threebutton");
+        return setNavbarHeight || twoThreeButtonEnabled;
+    }
+
+    // Method to detect whether an overlay is enabled or not
+    public static boolean isThemeEnabled(String packageName) {
+        if (sOverlayService == null) {
+            sOverlayService = new OverlayManager();
+        }
+        try {
+            ArrayList<OverlayInfo> infos = new ArrayList<OverlayInfo>();
+            infos.addAll(sOverlayService.getOverlayInfosForTarget("android",
+                    UserHandle.myUserId()));
+            infos.addAll(sOverlayService.getOverlayInfosForTarget("com.android.systemui",
+                    UserHandle.myUserId()));
+            for (int i = 0, size = infos.size(); i < size; i++) {
+                if (infos.get(i).packageName.equals(packageName)) {
+                    return infos.get(i).isEnabled();
+                }
+            }
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    public static class OverlayManager {
+        private final IOverlayManager mService;
+
+        public OverlayManager() {
+            mService = IOverlayManager.Stub.asInterface(
+                    ServiceManager.getService(Context.OVERLAY_SERVICE));
+        }
+
+        public void setEnabled(String pkg, boolean enabled, int userId)
+                throws RemoteException {
+            mService.setEnabled(pkg, enabled, userId);
+        }
+
+        public List<OverlayInfo> getOverlayInfosForTarget(String target, int userId)
+                throws RemoteException {
+            return mService.getOverlayInfosForTarget(target, userId);
+        }
     }
 }

@@ -4804,7 +4804,13 @@ public final class Settings {
          * @hide
          */
         public static final String BACK_SWIPE_EXTENDED = "back_swipe_extended";
-        
+
+        /**
+         * Gestures nav: whether show it or hide completely
+         * @hide
+         */
+        public static final String GESTURE_NAVBAR_SHOW = "gesture_navbar_show";
+
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
