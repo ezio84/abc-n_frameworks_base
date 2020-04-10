@@ -567,6 +567,7 @@ public class EdgeBackGestureHandler implements DisplayListener {
                         mThresholdCrossed = true;
                         if (!mIsExtendedSwipe && ((mLeftLongSwipeAction != 0 && mIsOnLeftEdge)
                                 || (mRightLongSwipeAction != 0 && !mIsOnLeftEdge))) {
+                            mLongSwipeAction.setIsVertical(false);
                             mHandler.postDelayed(mLongSwipeAction, (mTImeout - elapsedTime));
                             // mThresholdCrossed is now set to true so on next move event the handler won't get triggered again
                         }
