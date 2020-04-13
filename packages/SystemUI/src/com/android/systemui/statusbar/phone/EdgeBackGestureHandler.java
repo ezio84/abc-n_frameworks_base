@@ -65,9 +65,11 @@ import android.view.WindowManagerGlobal;
 import com.android.internal.util.custom.Utils;
 import com.android.systemui.Dependency;
 import com.android.systemui.R;
+import com.android.systemui.SysUiServiceProvider;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.bubbles.BubbleController;
 import com.android.systemui.recents.OverviewProxyService;
+import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.shared.system.QuickStepContract;
 import com.android.systemui.shared.system.WindowManagerWrapper;
 
@@ -195,6 +197,9 @@ public class EdgeBackGestureHandler implements DisplayListener {
 
     private final Vibrator mVibrator;
 
+    private CommandQueue mCommandQueue;
+    private boolean mExtendedBrowserAction;
+
     public EdgeBackGestureHandler(Context context, OverviewProxyService overviewProxyService) {
         final Resources res = context.getResources();
         mContext = context;
@@ -230,6 +235,8 @@ public class EdgeBackGestureHandler implements DisplayListener {
         setLongSwipeOptions();
 
         mVibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+
+        mCommandQueue = SysUiServiceProvider.getComponent(mContext, CommandQueue.class);
     }
 
     public void updateCurrentUserResources(Resources res) {
@@ -520,6 +527,9 @@ public class EdgeBackGestureHandler implements DisplayListener {
         mRightVerticalSwipeAction = Settings.System.getIntForUser(mContext.getContentResolver(),
             Settings.System.RIGHT_VERTICAL_BACK_SWIPE_ACTION, 0,
             UserHandle.USER_CURRENT);
+        mExtendedBrowserAction = Settings.System.getIntForUser(mContext.getContentResolver(),
+            Settings.System.GESTURE_NAVBAR_BROWSER_ACTION, 0,
+            UserHandle.USER_CURRENT) != 0;
     }
 
     private void onMotionEvent(MotionEvent ev) {
@@ -657,6 +667,13 @@ public class EdgeBackGestureHandler implements DisplayListener {
     }
 
     private void triggerAction(boolean isLeftPanel, boolean isVertical) {
+        if (mExtendedBrowserAction && isLeftPanel && !isVertical
+                && mCommandQueue.isBrowserShowing()) {
+            prepareForAction();
+            sendEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_FORWARD);
+            sendEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_FORWARD);
+            return;
+        }
         int action = isLeftPanel ? (isVertical ? mLeftVerticalSwipeAction : mLeftLongSwipeAction)
                 : (isVertical ? mRightVerticalSwipeAction : mRightLongSwipeAction);
         if (action == 0) return;
