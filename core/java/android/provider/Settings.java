@@ -9609,6 +9609,12 @@ public final class Settings {
                 new SettingsValidators.InclusiveIntegerRangeValidator(0, 1);
 
         /**
+         * Hide clock when Home is showing
+         * @hide
+         */
+        public static final String STATUSBAR_CLOCK_HIDDEN_BY_HOME = "statusbar_clock_hidden_by_home";
+
+        /**
          * The TCP/IP port to run ADB on, or -1 for USB
          * @hide
          */
