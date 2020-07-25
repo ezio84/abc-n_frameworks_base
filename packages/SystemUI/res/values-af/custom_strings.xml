@@ -62,8 +62,8 @@
     <string name="smartspace_now">Nou</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Kies\'n app</string>
-    <string name="recents_app_killed">App vermoor</string>
-    <string name="nope_cant_kill">Lanseerder kan nie doodgemaak word</string>
+    <string name="task_helper_app_killed">%1$s krag gestop</string>
+    <string name="empty_app_killed">App</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">Kiekie geskrap</string>
 </resources>

@@ -62,8 +62,8 @@
     <string name="smartspace_now">Ara</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Seleccioneu una aplicació</string>
-    <string name="recents_app_killed">Aplicació morir</string>
-    <string name="nope_cant_kill">Llançador no pot ser mort,</string>
+    <string name="task_helper_app_killed">%1$s força aturat</string>
+    <string name="empty_app_killed">Aplicació</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">Captura de pantalla suprimit</string>
 </resources>

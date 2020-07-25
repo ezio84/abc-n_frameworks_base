@@ -62,8 +62,8 @@
     <string name="smartspace_now">Most</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Jelölje ki a kívánt alkalmazás</string>
-    <string name="recents_app_killed">Alkalmazás ölte meg</string>
-    <string name="nope_cant_kill">Launcher nem lehet megölni</string>
+    <string name="task_helper_app_killed">%1$s erő állítani,</string>
+    <string name="empty_app_killed">Alkalmazás</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">Pillanatkép törölt</string>
 </resources>

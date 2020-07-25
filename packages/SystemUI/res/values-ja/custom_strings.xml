@@ -62,8 +62,8 @@
     <string name="smartspace_now">現在</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">アプリを選択</string>
-    <string name="recents_app_killed">アプリ殺され</string>
-    <string name="nope_cant_kill">ランチャーできない死亡</string>
+    <string name="task_helper_app_killed">%1$s を強制停止しました</string>
+    <string name="empty_app_killed">アプリ</string>
     <!-- Screenshot toast -->
-    <string name="delete_screenshot_toast">スクリーンショット削除</string>
+    <string name="delete_screenshot_toast">スクリーンショットを削除しました</string>
 </resources>

@@ -62,8 +62,8 @@
     <string name="smartspace_now">Сада</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Изаберите апликацију</string>
-    <string name="recents_app_killed">Апликација је убила</string>
-    <string name="nope_cant_kill">Лаунцхер не може бити убијен</string>
+    <string name="task_helper_app_killed">%1$s снага останавливала</string>
+    <string name="empty_app_killed">Апликација</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">С уклоњен</string>
 </resources>

@@ -62,8 +62,8 @@
     <string name="smartspace_now">Agora</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Selecione um aplicativo</string>
-    <string name="recents_app_killed">App mortos</string>
-    <string name="nope_cant_kill">Lançador não pode ser morto</string>
+    <string name="task_helper_app_killed">%1$s força parado</string>
+    <string name="empty_app_killed">Aplicação</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">Screenshot excluídos</string>
 </resources>

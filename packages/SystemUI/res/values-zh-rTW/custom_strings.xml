@@ -62,8 +62,8 @@
     <string name="smartspace_now">現在</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">选择一个应用程序</string>
-    <string name="recents_app_killed">应用程序的杀害</string>
-    <string name="nope_cant_kill">启动不能被杀死</string>
+    <string name="task_helper_app_killed">%1$s 力停止</string>
+    <string name="empty_app_killed">应用程序</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">截图删除的</string>
 </resources>

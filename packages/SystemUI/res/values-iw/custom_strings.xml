@@ -62,8 +62,8 @@
     <string name="smartspace_now">עכשיו</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">בחר אפליקציה</string>
-    <string name="recents_app_killed">האפליקציה הרג</string>
-    <string name="nope_cant_kill">משגר יכול להיות נהרג</string>
+    <string name="task_helper_app_killed">%1$s עצר כוח</string>
+    <string name="empty_app_killed">האפליקציה</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">מסך שנמחקו</string>
 </resources>

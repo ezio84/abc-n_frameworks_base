@@ -47,7 +47,7 @@
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB via rede</string>
     <string name="quick_settings_network_adb_enabled_label">Adb sobre rede</string>
-    <string name="quick_settings_network_adb_disabled_label">Adb sobre rede</string>
+    <string name="quick_settings_network_adb_disabled_label">ADB através de rede</string>
     <string name="adb_network_forced_tcp_warn">A rede ADB é forçada a ativar na porta: <xliff:g id="port">%1$s</xliff:g></string>
     <string name="quick_settings_immersive_tile">Modo imersivo</string>
     <string name="quick_settings_immersive_tile_off">Modo imersivo desligado</string>
@@ -62,8 +62,8 @@
     <string name="smartspace_now">Agora</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">Selecionar um app</string>
-    <string name="recents_app_killed">Aplicativo terminado</string>
-    <string name="nope_cant_kill">Lançador não pode ser encerrado</string>
+    <string name="task_helper_app_killed">%1$s força parado</string>
+    <string name="empty_app_killed">Aplicação</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">A captura de tela foi apagada</string>
 </resources>

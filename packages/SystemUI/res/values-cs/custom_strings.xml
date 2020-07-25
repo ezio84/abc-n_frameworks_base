@@ -62,8 +62,8 @@
     <string name="smartspace_now">Nyní</string>
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="app_picker_dialog_title">Vybrat aplikaci</string>
-    <string name="recents_app_killed">Aplikace ukončena</string>
-    <string name="nope_cant_kill">Spouštěč nelze ukončit</string>
+    <string name="task_helper_app_killed">Aplikace %1$s vynuceně ukončena</string>
+    <string name="empty_app_killed">Aplikace</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">Snímek obrazovky byl smazán</string>
 </resources>

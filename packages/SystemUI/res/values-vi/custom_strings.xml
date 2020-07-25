@@ -62,8 +62,8 @@
     <string name="smartspace_now">Bây giờ</string>
     <string name="smartspace_pill_text_format">%1$s:%2$s</string>
     <string name="app_picker_dialog_title">Chọn một ứng dụng</string>
-    <string name="recents_app_killed">Ứng dụng bị giết</string>
-    <string name="nope_cant_kill">Phóng không thể bị giết</string>
+    <string name="task_helper_app_killed">%1$s lực lượng dừng lại</string>
+    <string name="empty_app_killed">Ứng dụng</string>
     <!-- Screenshot toast -->
     <string name="delete_screenshot_toast">Màn hình bị xóa</string>
 </resources>
