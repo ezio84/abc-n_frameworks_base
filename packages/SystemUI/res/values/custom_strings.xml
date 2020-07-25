@@ -52,8 +52,8 @@
 
     <!-- ADB network tile -->
     <string name="quick_settings_adb_network">ADB network</string>
-    <string name="quick_settings_network_adb_enabled_label">Adb over Net</string>
-    <string name="quick_settings_network_adb_disabled_label">Adb over Net</string>
+    <string name="quick_settings_network_adb_enabled_label">ADB over Net</string>
+    <string name="quick_settings_network_adb_disabled_label">ADB over Net</string>
     <string name="adb_network_forced_tcp_warn">ADB network forced enabled on port: <xliff:g id="port">%1$s</xliff:g></string>
 
     <string name="quick_settings_immersive_tile">Immersive mode</string>
