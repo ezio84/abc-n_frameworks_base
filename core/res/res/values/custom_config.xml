@@ -35,4 +35,6 @@
         <item>restart</item>
         <item>screenshot</item> <!--2 buttons nav-->
     </string-array>
+
+    <bool name="config_has_Soli">false</bool>
 </resources>
