@@ -26,4 +26,10 @@
 
     <string name="task_helper_app_killed">App terminata</string>
     <string name="empty_app_killed">App</string>
+
+        <!-- Label for notification action to delete a screen recording file [CHAR LIMIT=35] -->
+    <string name="screenrecord_delete_label">Elimina</string>
+
+    <!-- A toast message shown after successfully deleting a screen recording [CHAR LIMIT=NONE] -->
+    <string name="screenrecord_delete_description">Registrazione eliminata</string>
 </resources>
